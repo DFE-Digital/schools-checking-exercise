@@ -1,59 +1,25 @@
 {% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} –
 GOV.UK Prototype Kit {% endblock %} {% block content %}
-
+<a href="/index" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper" id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Schools Checking Exercise Prototype</h1>
-        <h2 class="govuk-heading-l">Prototypes on current flows</h2>
+        <h1 class="govuk-heading-l">Journeys by removal reason</h1>
       </div>
       <div class="govuk-grid-column-one-half">
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="pupil-addback/index"
-                >Pupil selected is an addback</a
-              >
-            </h2>
-          </div>
-          <div class="govuk-summary-card__content">
-            <p class="govuk-body">
-              Journey changes when the pupil being removed is selected.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-summary-card">
-          <div class="govuk-summary-card__title-wrapper">
-            <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="independent/index"
-                >School is independent and pupil is on roll
+              <a class="govuk-heading-m" href="index-firstlanguage"
+                >Admitted from abroad with English not first language
               </a>
             </h2>
           </div>
           <div class="govuk-summary-card__content">
             <p class="govuk-body">
-              Journey changes when the pupil being removed is selected and the
-              answer to 'Is the student on roll' is yes.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-l">Prototypes on recommendations</h2>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-summary-card">
-          <div class="govuk-summary-card__title-wrapper">
-            <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="">Journey changes</a>
-            </h2>
-          </div>
-          <div class="govuk-summary-card__content">
-            <p class="govuk-body">
-              Recommendations based on the overall journey.
+              Journey changes when removal reason is Admitted from abroad with
+              English not first language.
             </p>
           </div>
         </div>
@@ -62,12 +28,61 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="">Specific page changes </a>
+              <a class="govuk-heading-m" href="index-merge">Merge pupils </a>
             </h2>
           </div>
           <div class="govuk-summary-card__content">
             <p class="govuk-body">
-              Recommendations based on specific screens within the journey.
+              Journey changes when removal reason is Merge pupils.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-full"></div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href=""
+                >Social care involvement - including police or prison
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">
+              Journey changes when removal reason is Social care involvement -
+              including police or prison.
+            </p>
+          </div>
+        </div>
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="">
+                Year group change
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">
+              Journey changes when removal reason is Year group change.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="">
+                Terminal or critical illness
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">
+              Journey changes when removal reason is Terminal or critical
+              illness.
             </p>
           </div>
         </div>
