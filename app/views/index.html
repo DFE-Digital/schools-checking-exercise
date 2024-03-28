@@ -1,20 +1,74 @@
-{% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
-content %}
+{% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} –
+GOV.UK Prototype Kit {% endblock %} {% block content %}
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper" id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Schools Checking Exercise Prototype</h1>
+        <h2 class="govuk-heading-l">Prototypes on current flows</h2>
+      </div>
+      <div class="govuk-grid-column-one-half">
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
               <a class="govuk-heading-m" href="pupil-addback/index"
-                >If pupil is addback</a
+                >Pupil selected is an addback</a
               >
             </h2>
           </div>
           <div class="govuk-summary-card__content">
-            <p class="govuk-body">Splits if student is add back -> yes</p>
+            <p class="govuk-body">
+              Journey changes when the pupil being removed is selected.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href=""
+                >School is independent and pupil is on roll
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">
+              Journey changes when the pupil being removed is selected and the
+              answer to 'Is the student on roll' is yes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-l">Prototypes on recommendations</h2>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="">Journey changes</a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">
+              Recommendations based on the overall journey.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="">Specific page changes </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">
+              Recommendations based on specific screens within the journey.
+            </p>
           </div>
         </div>
       </div>
