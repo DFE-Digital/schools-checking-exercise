@@ -1,0 +1,64 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they been higher-lower
+in prison, remand centre or secure unit? – {{ serviceName }} – GOV.UK Prototype
+Kit {% endblock %} {% block content %}
+<a href="removal-reason-yes" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="/yeargroup-independent" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Hannah Taylor (UPN: 6029312)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  Is their year group being changed to lower than 11 or higher
+                  than 11?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="higher-lower-higher"
+                    name="higher-lower"
+                    type="radio"
+                    value="higher"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="higher-lower-higher"
+                  >
+                    Higher
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="higher-lower-lower"
+                    name="higher-lower"
+                    type="radio"
+                    value="lower"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="higher-lower-lower"
+                  >
+                    Lower
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

@@ -29,10 +29,14 @@ router.post("/removal-answer-yes-independent", function (request, response) {
     response.redirect("independent/first-language");
   } else if (removalReason == "Merge pupils") {
     response.redirect("independent/merged-pupil");
-  } else if (removalReason == "Social care involvement - including police or prison") {
-    response.redirect("pupil-addback/deceased");
-  } else if (removalReason == "Permanently left England") {
-    response.redirect("pupil-addback/left-england-date");
+  } else if (
+    removalReason == "Social care involvement - including police or prison"
+  ) {
+    response.redirect("independent/social-care-involvement");
+  } else if (removalReason == "Terminal or critical illness") {
+    response.redirect("independent/terminal-diagnosed");
+  } else if (removalReason == "Year group change") {
+    response.redirect("independent/year-group-higherlower");
   }
 });
 
@@ -42,6 +46,14 @@ router.post("/on-roll-independent", function (request, response) {
     response.redirect("independent/removal-reason-yes");
   } else if (onRoll == "no") {
     response.redirect("independent/removal-reason-no");
+  }
+});
+router.post("/yeargroup-independent", function (request, response) {
+  var higherLower = request.session.data["higher-lower"];
+  if (higherLower == "higher") {
+    response.redirect("independent/year-group-higher");
+  } else if (higherLower == "lower") {
+    response.redirect("independent/year-group-lower");
   }
 });
 

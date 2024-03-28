@@ -1,0 +1,63 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they had a recent
+life changing injury? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %}
+{% block content %}
+<a href="life-changing-illness" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="investigation-serious-injury" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Hannah Taylor (UPN: 6029312)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  Have they had a recent life changing injury?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="life-changing-injury-yes"
+                    name="life-changing-injury"
+                    type="radio"
+                    value="yes"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="life-changing-injury-yes"
+                  >
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="life-changing-injury-no"
+                    name="life-changing-injury"
+                    type="radio"
+                    value="no"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="life-changing-injury-no"
+                  >
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

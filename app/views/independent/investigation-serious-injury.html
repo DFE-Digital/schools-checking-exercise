@@ -1,0 +1,64 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they been under
+investigation for a serious or life changing illness for 12 months or more? – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a href="life-changing-injury" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="access-education" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Hannah Taylor (UPN: 6029312)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  Have they been under investigation for a serious or life
+                  changing illness for 12 months or more?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="investigation-serious-illness-yes"
+                    name="investigation-serious-illness"
+                    type="radio"
+                    value="yes"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="investigation-serious-illness-yes"
+                  >
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="investigation-serious-illness-no"
+                    name="investigation-serious-illness"
+                    type="radio"
+                    value="no"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="investigation-serious-illness-no"
+                  >
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

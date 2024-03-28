@@ -1,0 +1,36 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they been
+year-group-change in prison, remand centre or secure unit? – {{ serviceName }} –
+GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a href="year-group-higherlower" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="year-group-higher-summary" method="post">
+          <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--l" for="year-group-change">
+                <span class="govuk-caption-l"
+                  >Request for Hannah Taylor (UPN: 6029312)
+                </span>
+                Why has the year group changed?
+              </label>
+            </h1>
+            <textarea
+              class="govuk-textarea"
+              id="year-group-change"
+              name="moreDetail"
+              rows="5"
+              aria-describedby="more-detail-hint"
+            ></textarea>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
