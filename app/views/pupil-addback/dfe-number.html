@@ -1,0 +1,24 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} What is the DfE number
+of the school where they're being reported this academic year? – {{ serviceName
+}} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a href="removal-reason" class="govuk-back-link">Back</a>
+<form class="form" action="ks4-studies-summary" method="post">
+  <span class="govuk-caption-l">Request for Joe Bell (UPN: 4816301) </span>
+  <h1 class="govuk-heading-l">
+    What is the DfE number of the school where they're being reported this
+    academic year?
+  </h1>
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="width-10"> DfE number </label>
+    <input
+      class="govuk-input govuk-input--width-10"
+      id="width-10"
+      name="width10"
+      type="text"
+    />
+  </div>
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+    Continue
+  </button>
+</form>
+{% endblock %}

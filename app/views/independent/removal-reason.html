@@ -1,0 +1,91 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Under which category do
+you wish to remove this pupil? – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+<a href="select-student-removed" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="/removal-answer" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Joe Bell (UPN: 4816301)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  Under which category do you wish to remove this pupil?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="abroad-english-second-language"
+                    name="removal-reason"
+                    type="radio"
+                    value="Admitted from abroad with English not first language"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="abroad-english-second-language"
+                  >
+                    Admitted from abroad with English not first language
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studies-other-school"
+                    name="removal-reason"
+                    type="radio"
+                    value="Completed KS4 studies this academic year in year 11 at another school or college"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studies-other-school"
+                  >
+                    Completed KS4 studies this academic year in year 11 at
+                    another school or college
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="deceased"
+                    name="removal-reason"
+                    type="radio"
+                    value="Deceased"
+                  />
+                  <label class="govuk-label govuk-radios__label" for="deceased">
+                    Deceased
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="left-england"
+                    name="removal-reason"
+                    type="radio"
+                    value="Permanently left England"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="left-england"
+                  >
+                    Permanently left England
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

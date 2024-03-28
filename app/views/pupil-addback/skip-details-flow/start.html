@@ -1,0 +1,120 @@
+{% extends "layouts/complete.html" %} {% block pageTitle %} School Checking Exercise
+– {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div
+          class="govuk-notification-banner"
+          role="region"
+          aria-labelledby="govuk-notification-banner-title"
+          data-module="govuk-notification-banner"
+        >
+          <div class="govuk-notification-banner__header">
+            <h2
+              class="govuk-notification-banner__title"
+              id="govuk-notification-banner-title"
+            >
+              Important
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <h3 class="govuk-notification-banner__heading">
+              You need a DfE Sign-in account to access the School Checking
+              Exercise.
+            </h3>
+            <p class="govuk-body">
+              To set up an account,
+              <a href="" class="govuk-link"
+                >enter your email address on the forgotten password page</a
+              >
+              and follow the instructions.
+            </p>
+          </div>
+        </div>
+        <h1 class="govuk-heading-l">School Checking Exercise</h1>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="/pupil-addback/create-request" method="post">
+          <p class="govuk-body">
+            This service is for making submissions to the Department for
+            Education (DfE). Use this service to submit your School Checking
+            data.
+          </p>
+          <p class="govuk-body">This includes:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>reviewing the DfE roll data for your establishment</li>
+            <li>adding students to your roll</li>
+            <li>requesting removal of students from your roll</li>
+            <li>uploading files in support of your request</li>
+            <li>submitting all your requests to the DfE</li>
+          </ul>
+
+          <button
+            draggable="false"
+            class="govuk-button govuk-button--start"
+            data-module="govuk-button"
+          >
+            Start now
+            <svg
+              class="govuk-button__start-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="17.5"
+              height="19"
+              viewBox="0 0 33 40"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+            </svg>
+          </button>
+
+          <h2 class="govuk-heading-m">Before you start</h2>
+          <p class="govuk-body">
+            You need to have an account with Department for Education Sign-in to
+            use this service.
+          </p>
+        </form>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+        <div class="related-navigation">
+          <h2 class="govuk-heading-s related-navigation__main-heading">
+            Related content
+          </h2>
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link govuk-body-s" href="#">DfE help centre</a>
+            </li>
+            <li>
+              <a class="govuk-link govuk-body-s" href="#">DfE news</a>
+            </li>
+            <li>
+              <a class="govuk-link govuk-body-s" href="#"
+                >School Checking Exercise guidance</a
+              >
+            </li>
+            <li>
+              <a class="govuk-link govuk-body-s" href="#"
+                >School performance calculation guide</a
+              >
+            </li>
+            <li>
+              <a class="govuk-link govuk-body-s" href="#"
+                >Manage account and access DfE online services</a
+              >
+            </li>
+            <li>
+              <a class="govuk-link govuk-body-s" href="#"
+                >Find a further education service</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

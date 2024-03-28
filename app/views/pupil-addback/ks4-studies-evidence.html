@@ -1,0 +1,51 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Upload your evidence –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form
+          class="form"
+          action="ks4-studies-evidence-2"
+          method="post"
+        >
+          <h1 class="govuk-heading-l">Upload your evidence</h1>
+          <h2 class="govuk-heading-m">Evidence required</h2>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Document A</li>
+            <li>Document B</li>
+          </ul>
+          
+          <h2 class="govuk-heading-m">Guidance</h2>
+          <div id="file-upload-1-hint" class="govuk-hint">
+            All evidence must meet the criteria specified in the June checking
+            exercise guidance. We will only accept the first 6 pages of evidence
+            provided. You can also upload more than 1.
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="file-upload-1">
+              Upload a file
+            </label>
+            <input
+              class="govuk-file-upload"
+              id="file-upload-1"
+              name="fileUpload1"
+              type="file"
+            />
+          </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Upload document
+          </button>
+          <p class="govuk-body">
+            <a href="request-inprogress" class="govuk-link"
+              >Cancel and return to requests</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

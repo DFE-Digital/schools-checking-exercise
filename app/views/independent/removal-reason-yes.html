@@ -1,0 +1,108 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Under which category do
+you wish to remove this pupil? – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+<a href="select-student-removed" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="/removal-answer-yes-independent" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Hannah Taylor (UPN: 6029312)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  Under which category do you wish to remove this pupil?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="abroad-english-second-language"
+                    name="removal-reason"
+                    type="radio"
+                    value="Admitted from abroad with English not first language"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="abroad-english-second-language"
+                  >
+                    Admitted from abroad with English not first language
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="merge-pupils"
+                    name="removal-reason"
+                    type="radio"
+                    value="Merge pupils"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="merge-pupils"
+                  >
+                    Merge pupils
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="social-care-involvement"
+                    name="removal-reason"
+                    type="radio"
+                    value="Social care involvement - including police or prison"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="social-care-involvement"
+                  >
+                    Social care involvement - including police or prison
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="terminal-critical-illness"
+                    name="removal-reason"
+                    type="radio"
+                    value="Terminal or critical illness"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="terminal-critical-illness"
+                  >
+                    Terminal or critical illness
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="year-group-change"
+                    name="removal-reason"
+                    type="radio"
+                    value="Year group change"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="year-group-change"
+                  >
+                    Year group change
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

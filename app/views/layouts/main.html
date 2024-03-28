@@ -1,6 +1,30 @@
-{#
-For guidance on how to use layouts see:
-https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
-#}
+{# For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts #} {% extends
+"govuk-prototype-kit/layouts/govuk-branded.njk" %} 
 
-{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+{% from "govuk/components/header/macro.njk" import govukHeader %}
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Schools Checking Exercise",
+  serviceUrl: "/",
+  navigation: [
+    {
+      href: "#",
+      text: "Your details"
+    },
+    {
+      href: "#",
+      text: "Your pupils"
+    },
+    {
+      href: "#",
+      text: "DfE Sign in account"
+    },
+    {
+      href: "#",
+      text: "Sign out"
+    }
+  ]
+}) }}
+{% endblock %}

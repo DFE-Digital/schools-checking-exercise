@@ -1,0 +1,63 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Full return summary for
+Newcastle Bridges School (URN: 145361) – {{ serviceName }} – GOV.UK Prototype
+Kit {% endblock %} {% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">
+          Full return summary for Newcastle Bridges School (URN: 145361)
+        </h1>
+      </div>
+      <div class="govuk-grid-column-full">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+            Pupils being removed
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header" style="width: 33%">
+                Name
+              </th>
+              <th scope="col" class="govuk-table__header" style="width: 33%">
+                UPN
+              </th>
+              <th scope="col" class="govuk-table__header">Removal reason</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Susan Allen</td>
+              <td class="govuk-table__cell">3021249</td>
+              <td class="govuk-table__cell">Left England</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Joe Bell</td>
+              <td class="govuk-table__cell">4816301</td>
+              <td class="govuk-table__cell">Deceased</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <form class="form" action="complete" method="post">
+          <h2 class="govuk-heading-m">Now submit your request</h2>
+          <p class="govuk-body">
+            By submitting this application you are confirming that, to the best
+            of your knowledge, the details you are providing are correct.
+          </p>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Accept and submit request
+          </button>
+          <p class="govuk-body">
+            <a class="govuk-link" href="request-complete"
+              >Cancel and return to requests</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

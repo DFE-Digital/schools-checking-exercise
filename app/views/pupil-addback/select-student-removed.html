@@ -1,0 +1,225 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} What is the name of the
+student to be removed? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %}
+{% block content %}
+<a href="create-request" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="removal-reason" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  What is the name of the student to be removed?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-1"
+                    name="studentRemoved"
+                    type="radio"
+                    value="John Adams (UPN: 1020305)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-1"
+                  >
+                    John Adams (UPN: 1020305)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-2"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Susan Allen (UPN: 3021249)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-2"
+                  >
+                    Susan Allen (UPN: 3021249)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-3"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Joe Bell (UPN: 4816301)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-3"
+                  >
+                    Joe Bell (UPN: 4816301)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-4"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Stephen Collins (UPN: 3500281)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-4"
+                  >
+                    Stephen Collins (UPN: 3500281)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-5"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Stephen Collins (UPN: 4729001)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-5"
+                  >
+                    Stephen Collins (UPN: 4729001)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-6"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Samantha Davidson (UPN: 9304812)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-6"
+                  >
+                    Samantha Davidson (UPN: 9304812)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-7"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Olive Forester (UPN: 1094722)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-7"
+                  >
+                    Olive Forester (UPN: 1094722)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-8"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Lewis Marshall (UPN: 6293018)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-8"
+                  >
+                    Lewis Marshall (UPN: 6293018)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-9"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Katherine Parker (UPN: 8003948)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-9"
+                  >
+                    Katherine Parker (UPN: 8003948)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-10"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Hamish Richards (UPN: 4802812)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-10"
+                  >
+                    Hamish Richards (UPN: 4802812)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-11"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Ryan Scott (UPN: 1232122)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-11"
+                  >
+                    Ryan Scott (UPN: 1232122)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-12"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Hannah Taylor (UPN: 6029312)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-12"
+                  >
+                    Hannah Taylor (UPN: 6029312)
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="studentRemoved-13"
+                    name="studentRemoved"
+                    type="radio"
+                    value="Holly Webster (UPN: 120482)"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="studentRemoved-13"
+                  >
+                    Holly Webster (UPN: 120482)
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
