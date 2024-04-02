@@ -1,0 +1,52 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} –
+GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a href="/pupil-addback/index" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Journey recommendations</h1>
+        <h2 class="govuk-heading-m">Start page skips to create a request</h2>
+
+        <p class="govuk-body">
+          User lands on the start page and skips 'Your details' and 'Pupil
+          details' pages to continue their journey on 'Create a request'. User
+          can access 'Pupil details' and 'Your details' through the header.
+        </p>
+        <h3 class="govuk-heading-s">When to implement</h3>
+        <p class="govuk-body">
+          If 'Your details' and 'Pupil details' are reference points and do not
+          require a call to action, and pupil list can be longer than 30.
+        </p>
+        
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Page</th>
+              <th scope="col" class="govuk-table__header">Link to page</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Start</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="start">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Create a request</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="/pupil-addback/create-request"
+                  >Link</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

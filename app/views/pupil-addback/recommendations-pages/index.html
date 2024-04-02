@@ -1,0 +1,69 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} –
+GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a href="/pupil-addback/index" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Specific page recommendations</h1>
+        <h2 class="govuk-heading-m">Independent school request</h2>
+        <p class="govuk-body">
+          Helps the user decide if they want to create a request by giving them
+          information of what is available to them.
+        </p>
+        <h3 class="govuk-heading-s">When to implement</h3>
+        <p class="govuk-body">
+          If the check to see if a school is independent can be after the
+          'Start' page and before this page of the journey.
+        </p>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Page</th>
+              <th scope="col" class="govuk-table__header">Link to page</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Create a request for independent schools
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="create-request-independent">Link</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="govuk-heading-m">Shorter full request summary</h2>
+        <p class="govuk-body">
+          Gives the user a clearer, more succinct summary before submitting.
+        </p>
+        <h3 class="govuk-heading-s">When to implement</h3>
+        <p class="govuk-body">
+          If the average number of requests submitted is more than 3 and users
+          do not need to download the summary before they submit.
+        </p>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Page</th>
+              <th scope="col" class="govuk-table__header">Link to page</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Shorter return summary for school
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="request-summary-short">Link</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

@@ -11,7 +11,12 @@ Kit {% endblock %} {% block content %}
             <h1 class="govuk-heading-l">
               Full return summary for Newcastle Bridges School (URN: 145361)
             </h1>
-            <p class="govuk-body">You are submitting no requests.</p>
+
+            <h2 class="govuk-heading-m">You are subnmitting no requests</h2>
+            <p class="govuk-body">
+              By submitting this application you are confirming that, to the
+              best of your knowledge, the details you are providing are correct.
+            </p>
 
             <form action="/form-handler" method="post" novalidate>
               <input type="hidden" name="answers-checked" value="true" />
@@ -24,7 +29,7 @@ Kit {% endblock %} {% block content %}
               </button>
               <p class="govuk-body">
                 <a class="govuk-link" href="create-request"
-                  >Return to add a request</a
+                  >Return and add a request</a
                 >
               </p>
             </form>

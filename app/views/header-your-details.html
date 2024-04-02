@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Your details – {{
+    serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+      <main class="govuk-main-wrapper">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <form class="form" action="" method="post">
+              <table class="govuk-table">
+                <h1>
+                  <caption class="govuk-table__caption govuk-table__caption--l">
+                    Your details
+                  </caption>
+                </h1>
+    
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                      Establishment name
+                    </th>
+                    <td class="govuk-table__cell">Newcastle Bridges School</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                      Establishment URN
+                    </th>
+                    <td class="govuk-table__cell">145361</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Key stage</th>
+                    <td class="govuk-table__cell">4</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Your name</th>
+                    <td class="govuk-table__cell">John Smith</td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Your email</th>
+                    <td class="govuk-table__cell">
+                      john.smith@education.school.uk
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2 class="govuk-heading-m">If you need to change anything</h2>
+              <p class="govuk-body">
+                Let us know by
+                <a href="" class="govuk-link"
+                  >contacting us here (opens in a new window).</a
+                >
+              </p>
+              <button type="submit" class="govuk-button" data-module="govuk-button">
+                Return to requests
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    {% endblock %}
+    
