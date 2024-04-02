@@ -31,7 +31,7 @@ endblock %} {% block content %}
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Removal category</dt>
+                <dt class="govuk-summary-list__key">Removal reason</dt>
                 <dd class="govuk-summary-list__value">
                   Permanently left England
                 </dd>
@@ -51,13 +51,13 @@ endblock %} {% block content %}
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="left-england-date"
                     >Change<span class="govuk-visually-hidden">
-                      Date of removal from roll</span
+                      Removal from roll date</span
                     ></a
                   >
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Country moved to</dt>
+                <dt class="govuk-summary-list__key">Country they've moved to</dt>
                 <dd class="govuk-summary-list__value">Australia</dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="country-moved"
@@ -69,10 +69,9 @@ endblock %} {% block content %}
               </div>
             </dl>
 
-            <h2 class="govuk-heading-m">Now submit your request</h2>
+            <h2 class="govuk-heading-m">Declaration</h2>
             <p class="govuk-body">
-              By submitting this application you are confirming that, to the
-              best of your knowledge, the details you are providing are correct.
+              I confirm that the information I have given is correct.
             </p>
             <form action="/form-handler" method="post" novalidate>
               <input type="hidden" name="answers-checked" value="true" />
@@ -81,7 +80,7 @@ endblock %} {% block content %}
                 class="govuk-button"
                 data-module="govuk-button"
               >
-                Accept and submit request
+                Confirm and upload evidence
               </button>
               <p class="govuk-body">
                 <a href="request-inprogress" class="govuk-link"

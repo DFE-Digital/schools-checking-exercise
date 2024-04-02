@@ -1,5 +1,6 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Check your answers –
-{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+{% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
+before submitting this request – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -7,7 +8,7 @@
         <form class="form" action="request-complete" method="post">
           <div class="govuk-width-container">
             <h1 class="govuk-heading-l">
-              Check your answers
+              Check your answers before submitting this request
             </h1>
             <h2 class="govuk-heading-m">Pupil being removed and why</h2>
             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
@@ -30,12 +31,12 @@
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Removal category</dt>
+                <dt class="govuk-summary-list__key">Removal reason</dt>
                 <dd class="govuk-summary-list__value">Deceased</dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="removal-reason"
                     >Change<span class="govuk-visually-hidden">
-                      Removal category</span
+                      Removal reason</span
                     ></a
                   >
                 </dd>
@@ -55,10 +56,9 @@
               </div>
             </dl>
 
-            <h2 class="govuk-heading-m">Now submit your request</h2>
+            <h2 class="govuk-heading-m">Declaration</h2>
             <p class="govuk-body">
-              By submitting this application you are confirming that, to the
-              best of your knowledge, the details you are providing are correct.
+              I confirm that the information I have given is correct.
             </p>
             <form action="/form-handler" method="post" novalidate>
               <input type="hidden" name="answers-checked" value="true" />
@@ -67,7 +67,7 @@
                 class="govuk-button"
                 data-module="govuk-button"
               >
-                Accept and send
+                Confirm and submit
               </button>
               <p class="govuk-body">
                 <a href="request-inprogress" class="govuk-link"

@@ -31,14 +31,14 @@ endblock %} {% block content %}
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Removal category</dt>
+                <dt class="govuk-summary-list__key">Removal reason</dt>
                 <dd class="govuk-summary-list__value">
                   Admitted from abroad with English not first language
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href=""
                     >Change<span class="govuk-visually-hidden">
-                      Removal category</span
+                      Removal reason</span
                     ></a
                   >
                 </dd>
@@ -81,7 +81,7 @@ endblock %} {% block content %}
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  School admission date in England
+                  Date of joining school or college in England
                 </dt>
                 <dd class="govuk-summary-list__value">20 September 2020</dd>
                 <dd class="govuk-summary-list__actions">
@@ -108,10 +108,9 @@ endblock %} {% block content %}
               </div>
             </dl>
 
-            <h2 class="govuk-heading-m">Now upload your evidence</h2>
+            <h2 class="govuk-heading-m">Declaration</h2>
             <p class="govuk-body">
-              By submitting this application you are confirming that, to the
-              best of your knowledge, the details you are providing are correct.
+              I confirm that the information I have given is correct.
             </p>
             <form action="/form-handler" method="post" novalidate>
               <input type="hidden" name="answers-checked" value="true" />
@@ -120,12 +119,10 @@ endblock %} {% block content %}
                 class="govuk-button"
                 data-module="govuk-button"
               >
-                Accept and upload evidence
+                Confirm and upload evidence
               </button>
               <p class="govuk-body">
-                <a href="request-inprogress" class="govuk-link"
-                  >Cancel and return to requests</a
-                >
+                <a href="" class="govuk-link">Cancel and return to requests</a>
               </p>
             </form>
           </div>
