@@ -23,6 +23,15 @@ router.post("/removal-answer-addback", function (request, response) {
   }
 });
 
+router.post("/admission-routing", function (request, response) {
+  var admissionDate = request.session.data["admissionDate"];
+  if (admissionDate == "yes") {
+    response.redirect("pupil-addback/recommendations-journey/abroad-firstlanguage-summary-yes");
+  } else if (admissionDate == "no") {
+    response.redirect("pupil-addback/recommendations-journey/admission-date");
+  }
+});
+
 router.post("/removal-answer-yes-independent", function (request, response) {
   var removalReason = request.session.data["removal-reason"];
   if (removalReason == "Admitted from abroad with English not first language") {

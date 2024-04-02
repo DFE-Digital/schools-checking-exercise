@@ -1,30 +1,38 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Do you need to create a request? – {{
-serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+{% extends "layouts/main.html" %} {% block pageTitle %} Do you need to create a
+request? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+<a href="admission-date-england" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper" id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="/pupil-addback-request" method="post" novalidate>
+        <form action="/admission-routing" method="post" novalidate>
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Joe Bell (UPN: 4816301)
+                </span>
                 <h1 class="govuk-fieldset__heading">
-                  Do you need to create a request?
+                  Was this the same admission date to your school or college?
                 </h1>
               </legend>
-
+              <p class="govuk-body">
+                If not, you will have to provide the admission date for your
+                school.
+              </p>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="createRequestYes"
-                    name="createRequest"
+                    id="admissionDateYes"
+                    name="admissionDate"
                     type="radio"
                     value="yes"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="createRequestYes"
+                    for="admissionDateYes"
                   >
                     Yes
                   </label>
@@ -32,14 +40,14 @@ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="createRequestNo"
-                    name="createRequest"
+                    id="admissionDateNo"
+                    name="admissionDate"
                     type="radio"
                     value="no"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="createRequestNo"
+                    for="admissionDateNo"
                   >
                     No
                   </label>
