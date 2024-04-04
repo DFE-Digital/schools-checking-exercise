@@ -1,6 +1,6 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} What pupil should be
-merged? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
-content %}
+{% extends "layouts/main.html" %} {% block pageTitle %} Which pupil record do
+you want to merge? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {%
+block content %}
 <a href="removal-reason-yes" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
@@ -14,12 +14,16 @@ content %}
                   <span class="govuk-caption-l"
                     >Request for Hannah Taylor (UPN: 6029312)
                   </span>
-                  What pupil should be merged?
+                  Which pupil record do you want to merge?
                 </h1>
               </legend>
               <div class="govuk-form-group">
-                <select class="govuk-select" id="sort" name="sort">
-                  <option value="">Select a pupil</option>
+                <label class="govuk-label" for="pupil">
+                  Select the UPN of the duplicate pupil record
+                </label>
+
+                <select class="govuk-select" id="pupil" name="sort">
+                  <option value="">Select a UPN</option>
                   <option value="1020305">John Adams (UPN: 1020305)</option>
                   <option value="3021249">Susan Allen (UPN: 3021249)</option>
                   <option value="4816301">Joe Bell (UPN: 4816301)</option>

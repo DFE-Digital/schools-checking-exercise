@@ -1,14 +1,14 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
-before submitting evidence – {{ serviceName }} – GOV.UK Prototype Kit {%
+before submitting this request – {{ serviceName }} – GOV.UK Prototype Kit {%
 endblock %} {% block content %}
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="terminal-critical-evidence" method="post">
+        <form class="form" action="request-complete" method="post">
           <div class="govuk-width-container">
             <h1 class="govuk-heading-l">
-              Check your answers before submitting evidence
+              Check your answers before submitting this request
             </h1>
             <h2 class="govuk-heading-m">Pupil being removed and why</h2>
             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
@@ -45,9 +45,7 @@ endblock %} {% block content %}
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">Removal reason</dt>
-                <dd class="govuk-summary-list__value">
-                  Year group change
-                </dd>
+                <dd class="govuk-summary-list__value">Year group change</dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="removal-reason-yes"
                     >Change<span class="govuk-visually-hidden">
@@ -57,67 +55,25 @@ endblock %} {% block content %}
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Diagnosed with terminal illness
-                </dt>
-                <dd class="govuk-summary-list__value">No</dd>
+                <dt class="govuk-summary-list__key">New year group</dt>
+                <dd class="govuk-summary-list__value">Year 8</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="terminal-diagnosed"
+                  <a class="govuk-link" href="year-group-move"
                     >Change<span class="govuk-visually-hidden">
-                      Diagnosed with terminal illness</span
+                      New year group</span
                     ></a
                   >
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Critical illness for 12 months or more
-                </dt>
-                <dd class="govuk-summary-list__value">Yes</dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="critical-illness"
-                    >Change<span class="govuk-visually-hidden">
-                      Critical illness for 12 months or more</span
-                    ></a
-                  >
+                <dt class="govuk-summary-list__key">Reason for change</dt>
+                <dd class="govuk-summary-list__value">
+                  Pupil has been kept back a year.
                 </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Life changing illness or injury
-                </dt>
-                <dd class="govuk-summary-list__value">No</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="illness-injury-yes"
+                  <a class="govuk-link" href="year-group-lower"
                     >Change<span class="govuk-visually-hidden">
-                      Life changing illness or injury</span
-                    ></a
-                  >
-                </dd>
-              </div>
-
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Severe impact on education and sitting exams
-                </dt>
-                <dd class="govuk-summary-list__value">Yes</dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="access-education"
-                    >Change<span class="govuk-visually-hidden">
-                      Severe and profound impact
-                    </span></a
-                  >
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  Sat exams as a year 11 pupil
-                </dt>
-                <dd class="govuk-summary-list__value">No</dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="sat-exams-terminal"
-                    >Change<span class="govuk-visually-hidden">
-                      Sat exams as a year 11 pupil</span
+                      Reason for change</span
                     ></a
                   >
                 </dd>
@@ -135,7 +91,7 @@ endblock %} {% block content %}
                 class="govuk-button"
                 data-module="govuk-button"
               >
-                Confirm and upload evidence
+                Confirm and submit
               </button>
               <p class="govuk-body">
                 <a href="create-request" class="govuk-link"

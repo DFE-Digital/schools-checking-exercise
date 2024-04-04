@@ -1,12 +1,12 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Why has the year group
-changed? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+{% extends "layouts/main.html" %} {% block pageTitle %} Why have they changed
+year group? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
 content %}
 <a href="year-group-move" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="" method="post">
+        <form class="form" action="year-group-summary-lower" method="post">
           <div class="govuk-form-group">
             <div
               class="govuk-form-group govuk-character-count"
@@ -18,7 +18,7 @@ content %}
               </span>
               <h1 class="govuk-label-wrapper">
                 <label class="govuk-label govuk-label--l" for="with-hint">
-                  Why has the year group changed?
+                  Why have they changed year group?
                 </label>
               </h1>
               <textarea
