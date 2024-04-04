@@ -73,7 +73,7 @@ router.post("/removal-answer-yes-independent", function (request, response) {
   } else if (removalReason == "Terminal or critical illness") {
     response.redirect("independent/terminal-diagnosed");
   } else if (removalReason == "Year group change") {
-    response.redirect("independent/year-group-higherlower");
+    response.redirect("independent/year-group-move");
   }
 });
 
@@ -114,11 +114,15 @@ router.post(
 );
 
 //higher or lower yeargroup
-router.post("/yeargroup-independent", function (request, response) {
-  var higherLower = request.session.data["higher-lower"];
-  if (higherLower == "higher") {
-    response.redirect("independent/year-group-higher");
-  } else if (higherLower == "lower") {
+router.post("/yeargroup-onroll-independent", function (request, response) {
+  var higherLower = request.session.data["year-group-change"];
+  if (
+    higherLower == "year 8" ||
+    higherLower == "year 9" ||
+    higherLower == "year 10"
+  ) {
     response.redirect("independent/year-group-lower");
+  } else if (higherLower == "year 12" || higherLower == "year 13") {
+    response.redirect("independent/year-group-higher");
   }
 });

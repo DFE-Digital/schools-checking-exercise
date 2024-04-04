@@ -1,56 +1,40 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Have they been
-year-group-change in prison, remand centre or secure unit? – {{ serviceName }} –
-GOV.UK Prototype Kit {% endblock %} {% block content %}
-<a href="year-group-higherlower" class="govuk-back-link">Back</a>
+{% extends "layouts/main.html" %} {% block pageTitle %} Where did they
+previously report at the end of Key Stage 4? – {{ serviceName }} – GOV.UK
+Prototype Kit {% endblock %} {% block content %}
+<a href="year-group-move" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="dfe-number" method="post">
+        <form class="form" action="" method="post">
+          <span class="govuk-caption-l"
+            >Request for Hannah Taylor (UPN: 6029312)
+          </span>
+          <h1 class="govuk-heading-l">
+            Where did they previously report at the end of Key Stage 4?
+          </h1>
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                <span class="govuk-caption-l"
-                  >Request for Hannah Taylor (UPN: 6029312)
-                </span>
-                <h1 class="govuk-fieldset__heading">
-                  What year group are they changing to?
-                </h1>
-              </legend>
-              <div class="govuk-radios" data-module="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input
-                    class="govuk-radios__input"
-                    id="year-group-change-12"
-                    name="year-group-change"
-                    type="radio"
-                    value="year 12"
-                  />
-                  <label
-                    class="govuk-label govuk-radios__label"
-                    for="year-group-change-12"
-                  >
-                    Year 12
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input
-                    class="govuk-radios__input"
-                    id="year-group-change-13"
-                    name="year-group-change"
-                    type="radio"
-                    value="year 13"
-                  />
-                  <label
-                    class="govuk-label govuk-radios__label"
-                    for="year-group-change-13"
-                  >
-                    Year 13
-                  </label>
-                </div>
-              </div>
-            </fieldset>
+            <label class="govuk-label" for="width-10">
+              Enter the URN of the school or college
+            </label>
+            <input
+              class="govuk-input govuk-input--width-10"
+              id="width-10"
+              name="width10"
+              type="text"
+            />
           </div>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Help to find a URN
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              To find a unique reference number (URN), search a school or
+              college name on <a href="">Get Information about Schools</a>.
+            </div>
+          </details>
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Continue
           </button>

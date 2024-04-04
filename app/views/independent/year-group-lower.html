@@ -1,70 +1,40 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Have they been
-year-group-change in prison, remand centre or secure unit? – {{ serviceName }} –
-GOV.UK Prototype Kit {% endblock %} {% block content %}
-<a href="year-group-higherlower" class="govuk-back-link">Back</a>
+{% extends "layouts/main.html" %} {% block pageTitle %} Why has the year group
+changed? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+<a href="year-group-move" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="why-year-change" method="post">
+        <form class="form" action="" method="post">
           <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-                <span class="govuk-caption-l"
-                  >Request for Hannah Taylor (UPN: 6029312)
-                </span>
-                <h1 class="govuk-fieldset__heading">
-                  What year group are they changing to?
-                </h1>
-              </legend>
-              <div class="govuk-radios" data-module="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input
-                    class="govuk-radios__input"
-                    id="year-group-change-8"
-                    name="year-group-change"
-                    type="radio"
-                    value="year 8"
-                  />
-                  <label
-                    class="govuk-label govuk-radios__label"
-                    for="year-group-change-8"
-                  >
-                    Year 8
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input
-                    class="govuk-radios__input"
-                    id="year-group-change-9"
-                    name="year-group-change"
-                    type="radio"
-                    value="year 9"
-                  />
-                  <label
-                    class="govuk-label govuk-radios__label"
-                    for="year-group-change-9"
-                  >
-                    Year 9
-                  </label>
-                </div>
-                <div class="govuk-radios__item">
-                  <input
-                    class="govuk-radios__input"
-                    id="year-group-change-10"
-                    name="year-group-change"
-                    type="radio"
-                    value="year 10"
-                  />
-                  <label
-                    class="govuk-label govuk-radios__label"
-                    for="year-group-change-10"
-                  >
-                    Year 10
-                  </label>
-                </div>
+            <div
+              class="govuk-form-group govuk-character-count"
+              data-module="govuk-character-count"
+              data-maxlength="500"
+            >
+              <span class="govuk-caption-l"
+                >Request for Hannah Taylor (UPN: 6029312)
+              </span>
+              <h1 class="govuk-label-wrapper">
+                <label class="govuk-label govuk-label--l" for="with-hint">
+                  Why has the year group changed?
+                </label>
+              </h1>
+              <textarea
+                class="govuk-textarea govuk-js-character-count"
+                id="with-hint"
+                name="withHint"
+                rows="5"
+                aria-describedby="with-hint-info with-hint-hint"
+              ></textarea>
+              <div
+                id="with-hint-info"
+                class="govuk-hint govuk-character-count__message"
+              >
+                You can enter up to 500 characters
               </div>
-            </fieldset>
+            </div>
           </div>
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Continue
