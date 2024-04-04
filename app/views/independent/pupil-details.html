@@ -1,16 +1,17 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Pupil details – {{
-serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
-
+{% extends "layouts/main.html" %} {% block pageTitle %} Check your pupil details
+– {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a href="your-details" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <form class="form" action="create-request" method="post">
-          <h1 class="govuk-heading-l">Pupil details</h1>
+          <h1 class="govuk-heading-l">Check your pupil details</h1>
           <p class="govuk-body">
-            The following pupils are currently listed by the Department for
-            Education as on roll at your establishment. Please review the data
-            and update as required by clicking 'Continue'.
+            Download a list of pupils we have on roll for your school or
+            college. We use this list to calculate your
+            <a href="">school or college performance data</a>, unless you
+            request a change.
           </p>
           <table class="govuk-table">
             <caption class="govuk-table__caption govuk-table__caption--m">
@@ -78,17 +79,32 @@ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
               </tr>
             </tbody>
           </table>
-          <h2 class="govuk-heading-m">
-            If you need to reference this information
-          </h2>
+          <h2 class="govuk-heading-m">Download pupil details</h2>
+
           <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="#">Download as PDF</a>
+              <a class="govuk-link" href="#">
+                Newcastle Bridges School (URN: 145361), pupil roll data (PDF)</a
+              >
             </li>
             <li>
-              <a class="govuk-link" href="#">Download as Excel</a>
+              <a class="govuk-link" href="#">
+                Newcastle Bridges School (URN: 145361), pupil roll data (CSV)</a
+              >
             </li>
           </ul>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                If a pupil is missing
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              If you think a pupil is missing from your list, contact us by
+              email <a href="">CYPMD.HELPLINE@education.gov.uk</a> or phone
+              03001312762.
+            </div>
+          </details>
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Continue
           </button>

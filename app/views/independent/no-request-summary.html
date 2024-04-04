@@ -1,6 +1,6 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Full return summary for
-Newcastle Bridges School (URN: 145361) – {{ serviceName }} – GOV.UK Prototype
-Kit {% endblock %} {% block content %}
+{% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
+before submitting your request – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
@@ -9,24 +9,46 @@ Kit {% endblock %} {% block content %}
         <form class="form" action="complete" method="post">
           <div class="govuk-width-container">
             <h1 class="govuk-heading-l">
-              Full return summary for Newcastle Bridges School (URN: 145361)
+              Check your answers before submitting your request
             </h1>
-            <p class="govuk-body">You are submitting no requests.</p>
 
-            <form action="/form-handler" method="post" novalidate>
-              <input type="hidden" name="answers-checked" value="true" />
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Do you want to request to remove a pupil?
+                </dt>
+                <dd class="govuk-summary-list__value">No</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="create-request"
+                    >Change<span class="govuk-visually-hidden">
+                      Do you want to request to remove a pupil?
+                    </span></a
+                  >
+                </dd>
+              </div>
+            </dl>
+            <h2 class="govuk-heading-m">Download a copy of your request</h2>
+
+            <ul class="govuk-list">
+              <li>
+                <a class="govuk-link" href="#"
+                  >Full return summary for Newcastle Bridges School (URN:
+                  145361), 5 April 2024 (PDF)
+                </a>
+              </li>
+            </ul>
+            <form class="form" action="complete" method="post">
+              <h2 class="govuk-heading-m">Declaration</h2>
+              <p class="govuk-body">
+                I confirm that the information I have given is correct.
+              </p>
               <button
                 type="submit"
                 class="govuk-button"
                 data-module="govuk-button"
               >
-                Accept and submit request
+                Confirm and submit
               </button>
-              <p class="govuk-body">
-                <a class="govuk-link" href="create-request"
-                  >Return to add a request</a
-                >
-              </p>
             </form>
           </div>
         </form>

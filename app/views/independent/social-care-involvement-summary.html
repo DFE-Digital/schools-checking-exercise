@@ -1,10 +1,15 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Check your answers before submitting evidence –
-{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+{% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
+before submitting evidence – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="social-care-involvement-evidence" method="post">
+        <form
+          class="form"
+          action="social-care-involvement-evidence"
+          method="post"
+        >
           <div class="govuk-width-container">
             <h1 class="govuk-heading-l">
               Check your answers before submitting evidence
@@ -30,27 +35,27 @@
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">On roll</dt>
-                <dd class="govuk-summary-list__value">
-                  Yes
-                </dd>
+                <dt class="govuk-summary-list__key">
+                  On roll at your school or college
+                </dt>
+                <dd class="govuk-summary-list__value">Yes</dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="on-roll"
                     >Change<span class="govuk-visually-hidden">
-                      Removal category</span
-                    ></a
+                      On roll at your school or college
+                    </span></a
                   >
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Removal category</dt>
+                <dt class="govuk-summary-list__key">Removal reason</dt>
                 <dd class="govuk-summary-list__value">
-                  Social care involvement - including police or prison 
+                  Social care involvement - including police or prison
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="removal-reason-yes"
                     >Change<span class="govuk-visually-hidden">
-                      Removal category</span
+                      Removal reason</span
                     ></a
                   >
                 </dd>
@@ -59,7 +64,7 @@
                 <dt class="govuk-summary-list__key">Social care involvement</dt>
                 <dd class="govuk-summary-list__value">Yes</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="first-language"
+                  <a class="govuk-link" href="social-care-involvement"
                     >Change<span class="govuk-visually-hidden">
                       Social care involvement</span
                     ></a
@@ -67,59 +72,47 @@
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Country of origin</dt>
-                <dd class="govuk-summary-list__value">Algeria</dd>
+                <dt class="govuk-summary-list__key">Police involvement</dt>
+                <dd class="govuk-summary-list__value">Yes</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="county-origin"
+                  <a class="govuk-link" href="police-involvement"
                     >Change<span class="govuk-visually-hidden">
-                      Country of origin</span
-                    ></a
-                  >
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">School admission date</dt>
-                <dd class="govuk-summary-list__value">20 June 2021</dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="admission-date"
-                    >Change<span class="govuk-visually-hidden">
-                      School admission date</span
+                      Police involvement</span
                     ></a
                   >
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  School admission date in England
+                  Detained in prison, remand centre or secure unit
                 </dt>
-                <dd class="govuk-summary-list__value">20 September 2020</dd>
+                <dd class="govuk-summary-list__value">Yes</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="admission-date-england"
+                  <a class="govuk-link" href="detained"
                     >Change<span class="govuk-visually-hidden">
-                      School admission date in England</span
+                      Detained in prison, remand centre or secure unit</span
                     ></a
                   >
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Date of arrival in England
+                  Detained in prison, remand centre or secure unit
                 </dt>
-                <dd class="govuk-summary-list__value">12 October 2015</dd>
+                <dd class="govuk-summary-list__value">Yes</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="arrival-date"
+                  <a class="govuk-link" href="detained"
                     >Change<span class="govuk-visually-hidden">
-                      Date of arrival in England</span
+                      Detained in prison, remand centre or secure unit</span
                     ></a
                   >
                 </dd>
               </div>
             </dl>
 
-            <h2 class="govuk-heading-m">Now upload your evidence</h2>
+            <h2 class="govuk-heading-m">Declaration</h2>
             <p class="govuk-body">
-              By submitting this application you are confirming that, to the
-              best of your knowledge, the details you are providing are correct.
+              I confirm that the information I have given is correct.
             </p>
             <form action="/form-handler" method="post" novalidate>
               <input type="hidden" name="answers-checked" value="true" />
@@ -128,10 +121,10 @@
                 class="govuk-button"
                 data-module="govuk-button"
               >
-                Accept and upload evidence
+                Confirm and upload evidence
               </button>
               <p class="govuk-body">
-                <a href="request-inprogress" class="govuk-link"
+                <a href="create-request" class="govuk-link"
                   >Cancel and return to requests</a
                 >
               </p>

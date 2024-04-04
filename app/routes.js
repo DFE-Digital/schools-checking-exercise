@@ -6,7 +6,19 @@
 const govukPrototypeKit = require("govuk-prototype-kit");
 const router = govukPrototypeKit.requests.setupRouter();
 
-// Add your routes here
+// PUPIL ADDBACK
+
+//create a request
+router.post("/pupil-addback-request", function (request, response) {
+  var createRequest = request.session.data["createRequest"];
+  if (createRequest == "yes") {
+    response.redirect("pupil-addback/select-student-removed");
+  } else if (createRequest == "no") {
+    response.redirect("pupil-addback/no-request-summary");
+  }
+});
+
+//removal reason
 router.post("/removal-answer-addback", function (request, response) {
   var removalReason = request.session.data["removal-reason"];
   if (removalReason == "Admitted from abroad with English not first language") {
@@ -23,7 +35,8 @@ router.post("/removal-answer-addback", function (request, response) {
   }
 });
 
-router.post("/admission-routing", function (request, response) {
+//if admission date is the same - recommendation journey
+router.post("/admission-routing-addback", function (request, response) {
   var admissionDate = request.session.data["admissionDate"];
   if (admissionDate == "yes") {
     response.redirect("pupil-addback/recommendations-journey/abroad-firstlanguage-summary-yes");
@@ -32,6 +45,20 @@ router.post("/admission-routing", function (request, response) {
   }
 });
 
+
+// INDEPENDENT AND ON ROLL
+
+//create a request
+router.post("/pupil-independent", function (request, response) {
+  var createRequest = request.session.data["createRequest"];
+  if (createRequest == "yes") {
+    response.redirect("independent/select-student-removed");
+  } else if (createRequest == "no") {
+    response.redirect("independent/no-request-summary");
+  }
+});
+
+//removal reason
 router.post("/removal-answer-yes-independent", function (request, response) {
   var removalReason = request.session.data["removal-reason"];
   if (removalReason == "Admitted from abroad with English not first language") {
@@ -49,6 +76,7 @@ router.post("/removal-answer-yes-independent", function (request, response) {
   }
 });
 
+//pupil on roll
 router.post("/on-roll-independent", function (request, response) {
   var onRoll = request.session.data["on-roll"];
   if (onRoll == "yes") {
@@ -57,6 +85,8 @@ router.post("/on-roll-independent", function (request, response) {
     response.redirect("independent/removal-reason-no");
   }
 });
+
+//higher or lower yeargroup
 router.post("/yeargroup-independent", function (request, response) {
   var higherLower = request.session.data["higher-lower"];
   if (higherLower == "higher") {
@@ -66,20 +96,3 @@ router.post("/yeargroup-independent", function (request, response) {
   }
 });
 
-router.post("/pupil-addback-request", function (request, response) {
-  var createRequest = request.session.data["createRequest"];
-  if (createRequest == "yes") {
-    response.redirect("pupil-addback/select-student-removed");
-  } else if (createRequest == "no") {
-    response.redirect("pupil-addback/no-request-summary");
-  }
-});
-
-router.post("/pupil-independent", function (request, response) {
-  var createRequest = request.session.data["createRequest"];
-  if (createRequest == "yes") {
-    response.redirect("independent/select-student-removed");
-  } else if (createRequest == "no") {
-    response.redirect("independent/no-request-summary");
-  }
-});

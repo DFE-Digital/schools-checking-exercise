@@ -1,5 +1,6 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Check your answers before submitting evidence –
-{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+{% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
+before submitting evidence – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -30,25 +31,25 @@
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">On roll</dt>
-                <dd class="govuk-summary-list__value">
-                  Yes
-                </dd>
+                <dt class="govuk-summary-list__key">
+                  On roll at your school or college
+                </dt>
+                <dd class="govuk-summary-list__value">Yes</dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="on-roll"
                     >Change<span class="govuk-visually-hidden">
-                      Removal category</span
+                      On roll at your school or college</span
                     ></a
                   >
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Removal category</dt>
+                <dt class="govuk-summary-list__key">Removal reason</dt>
                 <dd class="govuk-summary-list__value">
                   Admitted from abroad with English not first language
                 </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="removal-reason-yes"
+                  <a class="govuk-link" href="removal-reason"
                     >Change<span class="govuk-visually-hidden">
                       Removal category</span
                     ></a
@@ -70,37 +71,14 @@
                 <dt class="govuk-summary-list__key">Country of origin</dt>
                 <dd class="govuk-summary-list__value">Algeria</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="county-origin"
+                  <a class="govuk-link" href="country-origin"
                     >Change<span class="govuk-visually-hidden">
                       Country of origin</span
                     ></a
                   >
                 </dd>
               </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">School admission date</dt>
-                <dd class="govuk-summary-list__value">20 June 2021</dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="admission-date"
-                    >Change<span class="govuk-visually-hidden">
-                      School admission date</span
-                    ></a
-                  >
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  School admission date in England
-                </dt>
-                <dd class="govuk-summary-list__value">20 September 2020</dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="admission-date-england"
-                    >Change<span class="govuk-visually-hidden">
-                      School admission date in England</span
-                    ></a
-                  >
-                </dd>
-              </div>
+
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
                   Date of arrival in England
@@ -114,12 +92,37 @@
                   >
                 </dd>
               </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Date of joining school or college in England
+                </dt>
+                <dd class="govuk-summary-list__value">20 September 2020</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="admission-date-england"
+                    >Change<span class="govuk-visually-hidden">
+                      Date of joining school in England</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Date of joining your school or college
+                </dt>
+                <dd class="govuk-summary-list__value">20 June 2023</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="admission-date"
+                    >Change<span class="govuk-visually-hidden">
+                      Date of joining School</span
+                    ></a
+                  >
+                </dd>
+              </div>
             </dl>
 
-            <h2 class="govuk-heading-m">Now upload your evidence</h2>
+            <h2 class="govuk-heading-m">Declaration</h2>
             <p class="govuk-body">
-              By submitting this application you are confirming that, to the
-              best of your knowledge, the details you are providing are correct.
+              I confirm that the information I have given is correct.
             </p>
             <form action="/form-handler" method="post" novalidate>
               <input type="hidden" name="answers-checked" value="true" />
@@ -128,10 +131,10 @@
                 class="govuk-button"
                 data-module="govuk-button"
               >
-                Accept and upload evidence
+                Confirm and upload evidence
               </button>
               <p class="govuk-body">
-                <a href="request-inprogress" class="govuk-link"
+                <a href="create-request" class="govuk-link"
                   >Cancel and return to requests</a
                 >
               </p>

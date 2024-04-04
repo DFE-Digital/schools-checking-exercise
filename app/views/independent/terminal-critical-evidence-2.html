@@ -5,33 +5,50 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-l">Upload your evidence</h1>
-        <h2 class="govuk-heading-m">Evidence required</h2>
+
+        <p class="govuk-body">If they have a terminal illness:</p>
         <ul class="govuk-list govuk-list--bullet">
           <li>
-            Evidence from medical professionals confirming that the illness is
-            terminal.
-          </li>
-          <li>
-            Evidence from medical professionals, dated in 2024 and before the
-            commencement of exams, confirming pupil has been unable to access
-            education for prolonged periods of time and/or sit all exams, and
-          </li>
-          <li>
-            Evidence from medical professionals confirming that the illness is
-            long term (over 12 months).
-          </li>
-          <li>
-            Evidence from medical professionals, dated in 2024 and before the
-            commencement of exams, confirming pupil has been unable to access
-            education for prolonged periods of time and/or sit all exams.
+            evidence from medical professionals confirming that the illness is
+            terminal
           </li>
         </ul>
-        <h2 class="govuk-heading-m">Guidance</h2>
-        <div id="file-upload-1-hint" class="govuk-hint">
-          All evidence must meet the criteria specified in the June checking
-          exercise guidance. We will only accept the first 6 pages of evidence
-          provided. You can also upload more than 1.
+
+        <p class="govuk-body">If they have a critical illness:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            evidence from medical professionals to confirm that the pupil has
+            been unable to access education for prolonged periods of time or sit
+            all exams (must be dated in 2024 and before exams started)
+          </li>
+          <li>
+            evidence from medical professionals to confirm that their illness is
+            long term (over 12 months)
+          </li>
+        </ul>
+
+        <p class="govuk-body">
+          If they have a recent and life changing illness or injury:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            evidence from medical professionals to confirm that the pupil has
+            been unable to access education for prolonged periods of time or sit
+            all exams (must be dated in 2024 and before exams started)
+          </li>
+        </ul>
+
+        <div class="govuk-inset-text">
+          If you do not provide all of the correct evidence, your request will
+          not be accepted.
         </div>
+        <h2 class="govuk-heading-m">How to upload documents</h2>
+        <p class="govuk-body">Upload your documents in PDF format.</p>
+        <p class="govuk-body">
+          You can submit up to 6 files, and each file can be up to 10 megabytes
+          (MB).
+        </p>
+
         <div class="govuk-form-group">
           <label class="govuk-label" for="file-upload-1"> Upload a file </label>
           <input
@@ -41,7 +58,6 @@
             type="file"
           />
         </div>
-
         <button
           type="submit"
           class="govuk-button govuk-button--secondary"
@@ -49,8 +65,7 @@
         >
           Upload document
         </button>
-      </div>
-      <div class="govuk-grid-column-full">
+
         <form class="form" action="request-complete" method="post">
           <table class="govuk-table">
             <caption class="govuk-table__caption govuk-table__caption--m">
@@ -62,7 +77,7 @@
                   File
                 </th>
                 <th scope="col" class="govuk-table__header">Link</th>
-                <th scope="col" class="govuk-table__header" style="width: 20%">
+                <th scope="col" class="govuk-table__header" style="width: 30%">
                   Action
                 </th>
               </tr>

@@ -1,13 +1,13 @@
-{% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} –
-GOV.UK Prototype Kit {% endblock %} {% block content %}
+{% extends "layouts/index.html" %} {% block pageTitle %} Have they been
+diagnosed with a terminal illness? – GOV.UK Prototype Kit {% endblock %} {%
+block content %}
 <a href="index" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper" id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">
-          Admitted from abroad with English not first language
-        </h1>
+        <h1 class="govuk-heading-l">Terminal or critical illness</h1>
+
         <table class="govuk-table">
           <caption class="govuk-table__caption govuk-table__caption--m">
             Full journey
@@ -75,56 +75,77 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
               </td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Yes - Why do you want to remove them?</td>
+              <td class="govuk-table__cell">
+                Yes - Why do you want to remove them?
+              </td>
               <td class="govuk-table__cell">
                 <a class="govuk-link" href="removal-reason-yes">Link</a>
               </td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">What is their first language?</td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="first-language">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                What is their country of origin?
+                Have they been diagnosed with a terminal illness?
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="country-origin">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                When did they arrive in England?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="arrival-date">Link</a>
+                <a class="govuk-link" href="terminal-diagnosed">Link</a>
               </td>
             </tr>
 
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                When did they first join a school or college in England?
+                Have they been diagnosed with a critical illness for 12 months
+                or more?
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="admission-date-england">Link</a>
+                <a class="govuk-link" href="critical-illness">Link</a>
               </td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                When did they join your school or college?
+                Have they had a recent diagnosis of a life changing illness?
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="admission-date">Link</a>
+                <a class="govuk-link" href="life-changing-illness">Link</a>
               </td>
             </tr>
+            <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  Have they been under investigation for a serious or life
+                  changing illness for 12 months or more?
+                </td>
+                <td class="govuk-table__cell">
+                  <a class="govuk-link" href="investigation-serious-injury"
+                    >Link</a
+                  >
+                </td>
+              </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they had a recent life changing injury?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="life-changing-injury">Link</a>
+              </td>
+            </tr>
+          
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Has this had a severe and profound effect on their ability to
+                access education?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="access-education"
+                  >Link</a
+                >
+              </td>
+            </tr>
+
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
                 Check your answers before submitting evidence
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="abroad-firstlanguage-summary"
+                <a class="govuk-link" href="terminal-critical-summary"
                   >Link</a
                 >
               </td>
@@ -132,7 +153,7 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Upload your evidence</td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="abroad-firstlanguage-evidence"
+                <a class="govuk-link" href="terminal-critical-evidence"
                   >Link</a
                 >
               </td>
@@ -142,16 +163,9 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 Upload your evidence - One document uploaded
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="abroad-firstlanguage-evidence-2"
+                <a class="govuk-link" href="terminal-critical-evidence-2"
                   >Link</a
                 >
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Requests - one in progress</td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="request-inprogress">Link</a>
               </td>
             </tr>
             <tr class="govuk-table__row">
@@ -160,7 +174,6 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 <a class="govuk-link" href="request-complete">Link</a>
               </td>
             </tr>
-
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
                 Check your answers before submitting your request

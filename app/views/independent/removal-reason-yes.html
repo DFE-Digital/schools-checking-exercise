@@ -1,12 +1,16 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Under which category do
-you wish to remove this pupil? – {{ serviceName }} – GOV.UK Prototype Kit {%
-endblock %} {% block content %}
-<a href="select-student-removed" class="govuk-back-link">Back</a>
+{% extends "layouts/main.html" %} {% block pageTitle %} Why do you want to
+remove them? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+<a href="on-roll" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="/removal-answer-yes-independent" method="post">
+        <form
+          class="form"
+          action="/removal-answer-yes-independent"
+          method="post"
+        >
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -14,7 +18,7 @@ endblock %} {% block content %}
                   >Request for Hannah Taylor (UPN: 6029312)
                 </span>
                 <h1 class="govuk-fieldset__heading">
-                  Under which category do you wish to remove this pupil?
+                  Why do you want to remove them?
                 </h1>
               </legend>
               <div class="govuk-radios" data-module="govuk-radios">
