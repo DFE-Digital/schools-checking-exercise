@@ -39,12 +39,13 @@ router.post("/removal-answer-addback", function (request, response) {
 router.post("/admission-routing-addback", function (request, response) {
   var admissionDate = request.session.data["admissionDate"];
   if (admissionDate == "yes") {
-    response.redirect("pupil-addback/recommendations-journey/abroad-firstlanguage-summary-yes");
+    response.redirect(
+      "pupil-addback/recommendations-journey/abroad-firstlanguage-summary-yes"
+    );
   } else if (admissionDate == "no") {
     response.redirect("pupil-addback/recommendations-journey/admission-date");
   }
 });
-
 
 // INDEPENDENT AND ON ROLL
 
@@ -86,6 +87,32 @@ router.post("/on-roll-independent", function (request, response) {
   }
 });
 
+//diagnosed with a critical illness for 12 months or more
+router.post(
+  "/critical-illness-onroll-independent",
+  function (request, response) {
+    var criticalIllness = request.session.data["critical-illness"];
+    if (criticalIllness == "yes") {
+      response.redirect("independent/illness-injury-yes");
+    } else if (criticalIllness == "no") {
+      response.redirect("independent/illness-injury-no");
+    }
+  }
+);
+
+//no to critical illness - diagnosis of a life changing illness or a recent life changing injury
+router.post(
+  "/illness-injury-no-onroll-independent",
+  function (request, response) {
+    var illnessInjury = request.session.data["illness-injury"];
+    if (illnessInjury == "yes") {
+      response.redirect("independent/access-education-yes");
+    } else if (illnessInjury == "no") {
+      response.redirect("independent/sat-exams-terminal-no");
+    }
+  }
+);
+
 //higher or lower yeargroup
 router.post("/yeargroup-independent", function (request, response) {
   var higherLower = request.session.data["higher-lower"];
@@ -95,4 +122,3 @@ router.post("/yeargroup-independent", function (request, response) {
     response.redirect("independent/year-group-lower");
   }
 });
-

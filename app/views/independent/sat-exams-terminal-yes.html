@@ -1,12 +1,12 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Have they been diagnosed
-with a critical illness for 12 months or more? – {{ serviceName }} – GOV.UK
-Prototype Kit {% endblock %} {% block content %}
-<a href="terminal-diagnosed" class="govuk-back-link">Back</a>
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they sat any exams
+as a year 11 pupil? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {%
+block content %}
+<a href="illness-injury-no" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="/critical-illness-onroll-independent" method="post">
+        <form class="form" action="terminal-critical-summary-branch" method="post">
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -14,22 +14,21 @@ Prototype Kit {% endblock %} {% block content %}
                   >Request for Hannah Taylor (UPN: 6029312)
                 </span>
                 <h1 class="govuk-fieldset__heading">
-                  Have they been diagnosed with a critical illness for 12 months
-                  or more?
+                  Have they sat any exams as a year 11 pupil?
                 </h1>
               </legend>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="critical-illness-yes"
-                    name="critical-illness"
+                    id="sat-exams-yes"
+                    name="sat-exams"
                     type="radio"
                     value="yes"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="critical-illness-yes"
+                    for="sat-exams-yes"
                   >
                     Yes
                   </label>
@@ -37,14 +36,14 @@ Prototype Kit {% endblock %} {% block content %}
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="critical-illness-no"
-                    name="critical-illness"
+                    id="sat-exams-no"
+                    name="sat-exams"
                     type="radio"
                     value="no"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="critical-illness-no"
+                    for="sat-exams-no"
                   >
                     No
                   </label>
