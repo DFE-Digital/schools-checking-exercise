@@ -1,12 +1,12 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Have they sat any year
-11 exams? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
-content %}
-<a href="access-education" class="govuk-back-link">Back</a>
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they had a recent
+life changing injury? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %}
+{% block content %}
+<a href="life-changing-illness-noeducation" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="terminal-critical-summary" method="post">
+        <form class="form" action="sat-exams-terminal-noeducation" method="post">
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -14,21 +14,40 @@ content %}
                   >Request for Hannah Taylor (UPN: 6029312)
                 </span>
                 <h1 class="govuk-fieldset__heading">
-                  Have they sat any year 11 exams?
+                  Have they had a recent life changing injury?
                 </h1>
               </legend>
+              <p class="govuk-body">
+                A life changing injury is a severe physical injury that has a
+                profound and lasting impact on a person's life.
+              </p>
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Examples of a life changing injury
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  <p class="govuk-body">This includes:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>limb amputation</li>
+                    <li>spinal cord injury</li>
+                    <li>traumatic brain injury</li>
+                  </ul>
+                </div>
+              </details>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="sat-exams-yes"
-                    name="sat-exams"
+                    id="injury-yes"
+                    name="injury"
                     type="radio"
                     value="yes"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="sat-exams-yes"
+                    for="injury-yes"
                   >
                     Yes
                   </label>
@@ -36,14 +55,14 @@ content %}
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="sat-exams-no"
-                    name="sat-exams"
+                    id="injury-no"
+                    name="injury"
                     type="radio"
                     value="no"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="sat-exams-no"
+                    for="illness-no"
                   >
                     No
                   </label>

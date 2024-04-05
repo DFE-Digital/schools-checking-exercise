@@ -1,0 +1,155 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} –
+GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a href="index-terminalcritical" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--l">
+            User answers if their education has been impacted
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Page</th>
+              <th scope="col" class="govuk-table__header" style="width: 20%">
+                Link to page
+              </th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they been diagnosed with a terminal illness?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="terminal-diagnosed-noeducation"
+                  >Link</a
+                >
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they been diagnosed with a critical illness for more than
+                12 months?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="critical-illness-noeducation"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they been diagnosed with a life changing illness?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="life-changing-illness-noeducation"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they had a recent life changing injury?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="life-changing-injury-noeducation"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they sat any exams as a year 11 pupil?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="sat-exams-terminal-noeducation"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Check your answers before submitting evidence
+              </td>
+              <td class="govuk-table__cell">
+                <a
+                  class="govuk-link"
+                  href="terminal-critical-summary-noeducation"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Upload your evidence</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="terminal-critical-evidence">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Upload your evidence - One document uploaded
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="terminal-critical-evidence-2"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Requests - one complete</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="request-complete">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Check your answers before submitting your request
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="request-summary">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Application complete</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="complete">Link</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+            Header pages
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Page</th>
+              <th scope="col" class="govuk-table__header" style="width: 20%">
+                Link to page
+              </th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Your details</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="/header-pupil-details">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Your pupil details</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="/header-your-details">Link</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

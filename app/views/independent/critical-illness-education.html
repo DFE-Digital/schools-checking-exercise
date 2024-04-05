@@ -1,12 +1,16 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Has this had a severe
-and profound effect on their ability to access education? – {{ serviceName }} –
-GOV.UK Prototype Kit {% endblock %} {% block content %}
-<a href="life-changing-injury-education" class="govuk-back-link">Back</a>
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they been diagnosed
+with a critical illness for more than 12 months? – {{ serviceName }} – GOV.UK
+Prototype Kit {% endblock %} {% block content %}
+<a href="terminal-diagnosed-education" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="sat-exams-terminal-education" method="post">
+        <form
+          class="form"
+          action="life-changing-illness-education"
+          method="post"
+        >
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -14,22 +18,39 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                   >Request for Hannah Taylor (UPN: 6029312)
                 </span>
                 <h1 class="govuk-fieldset__heading">
-                  Has this had a severe and profound effect on their ability to
-                  access education?
+                  Have they been diagnosed with a critical illness for more than
+                  12 months?
                 </h1>
               </legend>
+              <p class="govuk-body">
+                A critical illness is a serious ongoing health condition.
+              </p>
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Examples of a critical illness
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  <p class="govuk-body">This includes:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>a mental health condition</li>
+                    <li>an organ transplant</li>
+                  </ul>
+                </div>
+              </details>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="severe-impact-education-yes"
-                    name="severe-impact-education"
+                    id="critical-illness-yes"
+                    name="critical-illness"
                     type="radio"
                     value="yes"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="severe-impact-education-yes"
+                    for="critical-illness-yes"
                   >
                     Yes
                   </label>
@@ -37,14 +58,14 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="severe-impact-education-no"
-                    name="severe-impact-education"
+                    id="critical-illness-no"
+                    name="critical-illness"
                     type="radio"
                     value="no"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="severe-impact-education-no"
+                    for="critical-illness-no"
                   >
                     No
                   </label>

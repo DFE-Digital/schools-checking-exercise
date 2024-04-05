@@ -1,14 +1,14 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} Have they been diagnosed
-with a critical illness for more than 12 months? – {{ serviceName }} – GOV.UK
-Prototype Kit {% endblock %} {% block content %}
-<a href="terminal-diagnosed" class="govuk-back-link">Back</a>
+with a terminal illness? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock
+%} {% block content %}
+<a href="removal-reason-yes" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <form
           class="form"
-          action="/critical-illness-onroll-independent"
+          action="critical-illness-noeducation"
           method="post"
         >
           <div class="govuk-form-group">
@@ -18,39 +18,22 @@ Prototype Kit {% endblock %} {% block content %}
                   >Request for Hannah Taylor (UPN: 6029312)
                 </span>
                 <h1 class="govuk-fieldset__heading">
-                  Have they been diagnosed with a critical illness for more than
-                  12 months?
+                  Have they been diagnosed with a terminal illness?
                 </h1>
               </legend>
-              <details class="govuk-details">
-                <summary class="govuk-details__summary">
-                  <span class="govuk-details__summary-text">
-                    Examples of a critical illness
-                  </span>
-                </summary>
-                <div class="govuk-details__text">
-                  <p class="govuk-body">
-                    A critical illness is a serious ongoing health condition.
-                  </p>
-                  <p class="govuk-body">This includes:</p>
-                  <ul class="govuk-list govuk-list--bullet">
-                    <li>a mental health condition</li>
-                    <li>an organ transplant</li>
-                  </ul>
-                </div>
-              </details>
+           
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="critical-illness-yes"
-                    name="critical-illness"
+                    id="terminal-illness-yes"
+                    name="terminal-illness"
                     type="radio"
                     value="yes"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="critical-illness-yes"
+                    for="terminal-illness-yes"
                   >
                     Yes
                   </label>
@@ -58,14 +41,14 @@ Prototype Kit {% endblock %} {% block content %}
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="critical-illness-no"
-                    name="critical-illness"
+                    id="terminal-illness-no"
+                    name="terminal-illness"
                     type="radio"
                     value="no"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="critical-illness-no"
+                    for="terminal-illness-no"
                   >
                     No
                   </label>

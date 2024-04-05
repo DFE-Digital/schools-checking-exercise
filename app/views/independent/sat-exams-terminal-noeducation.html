@@ -1,12 +1,12 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Has this had a severe
-and profound effect on their ability to access education? – {{ serviceName }} –
-GOV.UK Prototype Kit {% endblock %} {% block content %}
-<a href="illness-injury-no" class="govuk-back-link">Back</a>
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they sat any year
+11 exams? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+<a href="life-changing-injury-noeducation" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="sat-exams-terminal-yes" method="post">
+        <form class="form" action="terminal-critical-summary-noeducation" method="post">
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -14,22 +14,21 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                   >Request for Hannah Taylor (UPN: 6029312)
                 </span>
                 <h1 class="govuk-fieldset__heading">
-                  Has this had a severe effect on their ability to access
-                  education or sit exams?
+                  Have they sat any year 11 exams?
                 </h1>
               </legend>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="severe-impact-education-yes"
-                    name="severe-impact-education"
+                    id="sat-exams-yes"
+                    name="sat-exams"
                     type="radio"
                     value="yes"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="severe-impact-education-yes"
+                    for="sat-exams-yes"
                   >
                     Yes
                   </label>
@@ -37,14 +36,14 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="severe-impact-education-no"
-                    name="severe-impact-education"
+                    id="sat-exams-no"
+                    name="sat-exams"
                     type="radio"
                     value="no"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="severe-impact-education-no"
+                    for="sat-exams-no"
                   >
                     No
                   </label>

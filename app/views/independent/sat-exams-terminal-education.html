@@ -1,12 +1,12 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Have they been diagnosed
-with a terminal illness? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock
-%} {% block content %}
-<a href="removal-reason-yes" class="govuk-back-link">Back</a>
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they sat any year
+11 exams? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+<a href="access-education" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="critical-illness" method="post">
+        <form class="form" action="terminal-critical-summary-education" method="post">
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -14,21 +14,21 @@ with a terminal illness? – {{ serviceName }} – GOV.UK Prototype Kit {% endbl
                   >Request for Hannah Taylor (UPN: 6029312)
                 </span>
                 <h1 class="govuk-fieldset__heading">
-                  Have they been diagnosed with a terminal illness?
+                  Have they sat any year 11 exams?
                 </h1>
               </legend>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="terminal-illness-yes"
-                    name="terminal-illness"
+                    id="sat-exams-yes"
+                    name="sat-exams"
                     type="radio"
                     value="yes"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="terminal-illness-yes"
+                    for="sat-exams-yes"
                   >
                     Yes
                   </label>
@@ -36,14 +36,14 @@ with a terminal illness? – {{ serviceName }} – GOV.UK Prototype Kit {% endbl
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="terminal-illness-no"
-                    name="terminal-illness"
+                    id="sat-exams-no"
+                    name="sat-exams"
                     type="radio"
                     value="no"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="terminal-illness-no"
+                    for="sat-exams-no"
                   >
                     No
                   </label>
