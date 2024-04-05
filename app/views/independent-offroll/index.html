@@ -6,7 +6,7 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-xl">
-          School is independent and pupil is on roll
+          School is independent and pupil is off roll
         </h1>
         <h2 class="govuk-heading-l">Journeys by removal reason</h2>
       </div>
@@ -14,15 +14,15 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="index-firstlanguage"
-                >Admitted from abroad with English not first language
-              </a>
+              <a class="govuk-heading-m" href="index-deceased">Deceased </a>
             </h2>
           </div>
           <div class="govuk-summary-card__content">
             <p class="govuk-body">
-              Journey changes when removal reason is Admitted from abroad with
-              English not first language.
+              <strong class="govuk-tag govuk-tag--green"> Complete </strong>
+              <br />
+              <br />
+              Journey changes when removal reason is Deceased.
             </p>
           </div>
         </div>
@@ -31,43 +31,53 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="index-merge">Merge pupils </a>
+              <a class="govuk-heading-m" href="index-homeeducation"
+                >Elective home education
+              </a>
             </h2>
           </div>
           <div class="govuk-summary-card__content">
             <p class="govuk-body">
-              Journey changes when removal reason is Merge pupils.
+              <strong class="govuk-tag govuk-tag--green"> Complete </strong>
+              <br />
+              <br />
+              Journey changes when removal reason is Elective home education.
             </p>
           </div>
         </div>
       </div>
-      <div class="govuk-grid-column-full"></div>
+
       <div class="govuk-grid-column-one-half">
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="index-socialcare"
-                >Social care involvement - including police or prison
-              </a>
+              <a class="govuk-heading-m" href="index-notonroll">Not on roll </a>
             </h2>
           </div>
           <div class="govuk-summary-card__content">
             <p class="govuk-body">
-              Journey changes when removal reason is Social care involvement -
-              including police or prison.
+              <strong class="govuk-tag govuk-tag--green"> Complete </strong>
+              <br />
+              <br />
+              Journey changes when removal reason is Not on roll.
             </p>
           </div>
         </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="index-yeargroup">
-                Year group change
+              <a class="govuk-heading-m" href="">
+                Permanently excluded from current school
               </a>
             </h2>
           </div>
           <div class="govuk-summary-card__content">
             <p class="govuk-body">
+              <strong class="govuk-tag govuk-tag--red"> Not started </strong>
+              <br />
+              <br />
               Journey changes when removal reason is Year group change.
             </p>
           </div>
@@ -77,15 +87,32 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="index-terminalcritical">
-                Terminal or critical illness
-              </a>
+              <a class="govuk-heading-m" href=""> Permanently left England </a>
             </h2>
           </div>
           <div class="govuk-summary-card__content">
             <p class="govuk-body">
-              Journey changes when removal reason is Terminal or critical
-              illness.
+              <strong class="govuk-tag govuk-tag--red"> Not started </strong>
+              <br />
+              <br />
+              Journey changes when removal reason is Permanently left England.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="">Pupil missing in Education</a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">
+              <strong class="govuk-tag govuk-tag--red"> Not started </strong>
+              <br />
+              <br />
+              Journey changes when removal reason is Pupil missing in Education.
             </p>
           </div>
         </div>

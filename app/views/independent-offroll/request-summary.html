@@ -1,0 +1,59 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
+before submitting your request – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">
+          Check your answers before submitting your request
+        </h1>
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+            Olive Forester (UPN: 1094722)
+          </caption>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header" style="width: 40%">
+                Removal reason
+              </th>
+              <td class="govuk-table__cell">Elective home education</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Removed from roll</th>
+              <td class="govuk-table__cell">3 May 2023</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="govuk-heading-m">Download a copy of your request</h2>
+
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="#"
+              >Full return summary for Newcastle Bridges School (URN: 145361), 5
+              April 2024 (PDF)
+            </a>
+          </li>
+        </ul>
+        <form class="form" action="complete" method="post">
+          <h2 class="govuk-heading-m">Declaration</h2>
+          <p class="govuk-body">
+            I confirm that the information I have given is correct.
+          </p>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Confirm and submit
+          </button>
+          <p class="govuk-body">
+            <a class="govuk-link" href="request-complete"
+              >Cancel and return to requests</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

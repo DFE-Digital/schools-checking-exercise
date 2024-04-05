@@ -1,0 +1,66 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Your requests – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <form class="form" action="select-student-removed" method="post">
+          <div class="govuk-form-group">
+            <table class="govuk-table">
+              <h1>
+                <caption class="govuk-table__caption govuk-table__caption--l">
+                  Your requests
+                </caption>
+              </h1>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Name</th>
+                  <th scope="col" class="govuk-table__header">UPN</th>
+                  <th scope="col" class="govuk-table__header">Progress</th>
+                  <th scope="col" class="govuk-table__header">Action</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__cell">Olive Forester</th>
+                  <td class="govuk-table__cell">1094722</td>
+                  <td class="govuk-table__cell">
+                    <strong class="govuk-tag govuk-tag--green">
+                      Complete
+                    </strong>
+                  </td>
+                  <td class="govuk-table__cell">
+                    <a href="" class="govuk-link">Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button
+              type="submit"
+              class="govuk-button govuk-button--secondary"
+              data-module="govuk-button"
+            >
+              Add another
+            </button>
+          </div>
+        </form>
+
+        <form class="form" action="request-summary" method="post">
+          <div class="govuk-form-group">
+            <br />
+            <button
+              type="submit"
+              class="govuk-button"
+              data-module="govuk-button"
+            >
+              Continue to submit request
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

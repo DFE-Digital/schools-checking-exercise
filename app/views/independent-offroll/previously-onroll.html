@@ -1,0 +1,63 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Were they on roll at
+your school in 2023/24? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock
+%} {% block content %}
+<a href="removal-reason-no" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="previously-onroll-summary" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Olive Forester (UPN: 1094722)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  Were they on roll at your school in 2023/24?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="onroll-yes"
+                    name="on-roll"
+                    type="radio"
+                    value="Yes"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="onroll-yes"
+                  >
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="onroll-no"
+                    name="on-roll"
+                    type="radio"
+                    value="No"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="onroll-no"
+                  >
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

@@ -1,0 +1,124 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Why do you want to
+remove them? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+<a href="on-roll" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form
+          class="form"
+          action="/removal-answer-offroll-independent"
+          method="post"
+        >
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Olive Forester (UPN: 1094722)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  Why do you want to remove them?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="deceased"
+                    name="removal-reason"
+                    type="radio"
+                    value="Deceased"
+                  />
+                  <label class="govuk-label govuk-radios__label" for="deceased">
+                    Deceased
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="elective-home-education"
+                    name="removal-reason"
+                    type="radio"
+                    value="Elective home education"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="elective-home-education"
+                  >
+                    Elective home education
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="not-on-roll"
+                    name="removal-reason"
+                    type="radio"
+                    value="Not on roll"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="not-on-roll"
+                  >
+                    Not on roll
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="permanently-excluded-current"
+                    name="removal-reason"
+                    type="radio"
+                    value="Permanently excluded from current school"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="permanently-excluded-current"
+                  >
+                    Permanently excluded from current school
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="left-england"
+                    name="removal-reason"
+                    type="radio"
+                    value="Permanently left England"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="left-england"
+                  >
+                    Permanently left England
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="missing-education"
+                    name="removal-reason"
+                    type="radio"
+                    value="Missing in education"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="missing-education"
+                  >
+                    Missing in education
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "layouts/complete.html" %} {% block pageTitle %} Application complete
+– {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">Application complete</h1>
+          <div class="govuk-panel__body">
+            Your reference number<br /><strong>HDJ2123F</strong>
+          </div>
+        </div>
+        <p class="govuk-body">We have sent you a confirmation email.</p>
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+        <p class="govuk-body">
+          Your request has been sent to DfE. We will contact you if we need more
+          information.
+        </p>
+        <p class="govuk-body">
+          We are unable to provide feedback on individual decisions.
+        </p>
+        <p class="govuk-body">
+          School or college performance data will be published in October 2024
+          and your revised data published in early 2025.
+        </p>
+
+        <button
+          type="submit"
+          class="govuk-button govuk-button--secondary"
+          data-module="govuk-button"
+        >
+          Go to your DfE account
+        </button>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

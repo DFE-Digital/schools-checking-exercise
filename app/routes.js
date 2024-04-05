@@ -83,7 +83,7 @@ router.post("/onroll-independent", function (request, response) {
   if (onRoll == "yes") {
     response.redirect("independent/removal-reason-yes");
   } else if (onRoll == "no") {
-    response.redirect("independent/removal-reason-no");
+    response.redirect("independent-offroll/index");
   }
 });
 
@@ -100,3 +100,46 @@ router.post("/yeargroup-onroll-independent", function (request, response) {
     response.redirect("independent/year-group-higher");
   }
 });
+
+// INDEPENDENT AND OFF ROLL
+
+//create a request
+router.post("/pupil-offroll-independent", function (request, response) {
+  var createRequest = request.session.data["createRequest"];
+  if (createRequest == "yes") {
+    response.redirect("independent-offroll/select-student-removed");
+  } else if (createRequest == "no") {
+    response.redirect("independent-offroll/no-request-summary");
+  }
+});
+
+//pupil on roll
+router.post("/offroll-independent", function (request, response) {
+  var onRoll = request.session.data["on-roll"];
+  if (onRoll == "yes") {
+    response.redirect("independent/index");
+  } else if (onRoll == "no") {
+    response.redirect("independent-offroll/removal-reason-no");
+  }
+});
+
+//removal reason
+router.post(
+  "/removal-answer-offroll-independent",
+  function (request, response) {
+    var removalReason = request.session.data["removal-reason"];
+    if (removalReason == "Deceased") {
+      response.redirect("independent-offroll/deceased");
+    } else if (removalReason == "Elective home education") {
+      response.redirect("independent-offroll/home-education");
+    } else if (removalReason == "Not on roll") {
+      response.redirect("independent-offroll/previously-onroll");
+    } else if (removalReason == "Permanently excluded from current school") {
+      response.redirect("independent-offroll/permanent-exclusion");
+    } else if (removalReason == "Permanently left England") {
+      response.redirect("independent-offroll/left-england-date");
+    } else if (removalReason == "Missing in education") {
+      response.redirect("independent-offroll/missing-education");
+    }
+  }
+);
