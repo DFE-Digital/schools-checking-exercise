@@ -1,0 +1,123 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
+before submitting evidence – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="missing-evidence" method="post">
+          <div class="govuk-width-container">
+            <h1 class="govuk-heading-l">
+              Check your answers before submitting evidence
+            </h1>
+            <h2 class="govuk-heading-m">Pupil being removed and why</h2>
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Pupil name</dt>
+                <dd class="govuk-summary-list__value">Olive Forester</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="select-student-removed"
+                    >Change<span class="govuk-visually-hidden"> name</span></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Pupil UPN</dt>
+                <dd class="govuk-summary-list__value">1094722</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="select-student-removed"
+                    >Change<span class="govuk-visually-hidden"> upn</span></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  On roll at your school or college
+                </dt>
+                <dd class="govuk-summary-list__value">No</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="on-roll"
+                    >Change<span class="govuk-visually-hidden">
+                      On roll at your school or college</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Removal reason</dt>
+                <dd class="govuk-summary-list__value">Missing in education</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="removal-reason-no"
+                    >Change<span class="govuk-visually-hidden">
+                      Removal reason</span
+                    ></a
+                  >
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Known whereabouts</dt>
+                <dd class="govuk-summary-list__value">No</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="missing-education"
+                    >Change<span class="govuk-visually-hidden">
+                      Known whereabouts</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  School or college made all efforts to find them
+                </dt>
+                <dd class="govuk-summary-list__value">Yes</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="locate-missing"
+                    >Change<span class="govuk-visually-hidden">
+                      School or college made all efforts to find them</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Date of removal from roll
+                </dt>
+                <dd class="govuk-summary-list__value">4 March 2023</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="missing-removed-date"
+                    >Change<span class="govuk-visually-hidden">
+                      Date of removal from roll
+                    </span></a
+                  >
+                </dd>
+              </div>
+            </dl>
+
+            <h2 class="govuk-heading-m">Declaration</h2>
+            <p class="govuk-body">
+              I confirm that the information I have given is correct.
+            </p>
+            <form action="/form-handler" method="post" novalidate>
+              <input type="hidden" name="answers-checked" value="true" />
+              <button
+                type="submit"
+                class="govuk-button"
+                data-module="govuk-button"
+              >
+                Confirm and upload evidence
+              </button>
+              <p class="govuk-body">
+                <a href="create-request" class="govuk-link"
+                  >Cancel and return to requests</a
+                >
+              </p>
+            </form>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Upload your evidence –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="missing-evidence-2" method="post">
+          <h1 class="govuk-heading-l">Upload your evidence</h1>
+
+          <p class="govuk-body">You need to provide:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>a completed joint local authority and school checklist</li>
+            <li>
+              confirmation from the local authority that the pupil can be
+              removed from the school roll
+            </li>
+          </ul>
+          <div class="govuk-inset-text">
+            If you do not provide all of the correct evidence, your request will
+            not be accepted.
+          </div>
+          <h2 class="govuk-heading-m">How to upload documents</h2>
+          <p class="govuk-body">Upload your documents in PDF format.</p>
+          <p class="govuk-body">
+            You can submit up to 6 files, and each file can be up to 10
+            megabytes (MB).
+          </p>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="file-upload-1">
+              Upload a file
+            </label>
+            <input
+              class="govuk-file-upload"
+              id="file-upload-1"
+              name="fileUpload1"
+              type="file"
+            />
+          </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Upload file
+          </button>
+          <p class="govuk-body">
+            <a href="request-inprogress" class="govuk-link"
+              >Cancel and return to requests</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
