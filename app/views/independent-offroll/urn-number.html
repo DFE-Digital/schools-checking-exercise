@@ -1,0 +1,47 @@
+{% extends "layouts/main.html" %} {% block pageTitle %}What school or college
+did they go on to? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {%
+block content %}
+<a href="permanent-exclusion" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="permanent-exclusion-summary" method="post">
+          <span class="govuk-caption-l"
+            >Request for Olive Forester (UPN: 1094722)
+          </span>
+          <h1 class="govuk-heading-l">
+            What school or college did they go on to?
+          </h1>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="width-10">
+              Enter the URN of the school or college
+            </label>
+            <input
+              class="govuk-input govuk-input--width-10"
+              id="width-10"
+              name="width10"
+              type="text"
+            />
+          </div>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Help to find a URN
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              To find a unique reference number (URN), search a school or
+              college name on <a href="">Get Information about Schools</a>.
+            </div>
+          </details>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
