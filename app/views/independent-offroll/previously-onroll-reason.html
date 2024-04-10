@@ -1,0 +1,50 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Why were they not on
+roll? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content
+%}
+<a href="previously-onroll" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="previously-onroll-summary" method="post">
+          <div
+            class="govuk-form-group govuk-character-count"
+            data-module="govuk-character-count"
+            data-maxlength="500"
+          >
+            <h1 class="govuk-label-wrapper">
+              <span class="govuk-caption-l">
+                Request for Olive Forester (UPN: 1094722)
+              </span>
+              <label class="govuk-label govuk-label--l" for="with-hint">
+                Why were they not on roll?
+              </label>
+            </h1>
+            <div id="with-hint-hint" class="govuk-hint">
+              For example, they were a private candidate.
+            </div>
+            <textarea
+              class="govuk-textarea govuk-js-character-count"
+              id="with-hint"
+              name="withHint"
+              rows="5"
+              aria-describedby="with-hint-info with-hint-hint"
+            ></textarea>
+            <div
+              id="with-hint-info"
+              class="govuk-hint govuk-character-count__message"
+            >
+              You can enter up to 500 characters
+            </div>
+          </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

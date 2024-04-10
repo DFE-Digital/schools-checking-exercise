@@ -1,30 +1,28 @@
 {% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} –
 GOV.UK Prototype Kit {% endblock %} {% block content %}
-
+<a href="/index" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper" id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Schools Checking Exercise Prototype</h1>
-        <h2 class="govuk-heading-l">Prototypes on current flows</h2>
+        <h1 class="govuk-heading-xl">
+          School is an FE college with 14 to 16 provision and pupil is on roll
+        </h1>
+        <h2 class="govuk-heading-l">Journeys by removal reason</h2>
       </div>
       <div class="govuk-grid-column-one-half">
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="pupil-addback/index"
-                >Pupil selected is an addback</a
-              >
+              <a class="govuk-heading-m" href="index-firstlanguage"
+                >Admitted from abroad with English not first language
+              </a>
             </h2>
           </div>
           <div class="govuk-summary-card__content">
             <p class="govuk-body">
-              <strong class="govuk-tag govuk-tag--turquoise">
-                Design complete
-              </strong>
-              <br />
-              <br />
-              'Is the request student an add back?' is Yes.
+              Journey changes when removal reason is Admitted from abroad with
+              English not first language.
             </p>
           </div>
         </div>
@@ -33,20 +31,44 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="independent/index"
-                >School is independent and pupil is on roll
+              <a class="govuk-heading-m" href="index-merge">Merge pupils </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">
+              Journey changes when removal reason is Merge pupils.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-full"></div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="index-socialcare"
+                >Social care involvement - including police or prison
               </a>
             </h2>
           </div>
           <div class="govuk-summary-card__content">
             <p class="govuk-body">
-              <strong class="govuk-tag govuk-tag--turquoise">
-                Design complete
-              </strong>
-              <br />
-              <br />
-              'Is the school an independent school?' is Yes and 'Is pupil still
-              on roll at your school/college?' is Yes.
+              Journey changes when removal reason is Social care involvement -
+              including police or prison.
+            </p>
+          </div>
+        </div>
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="index-yeargroup">
+                Year group change
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">
+              Journey changes when removal reason is Year group change.
             </p>
           </div>
         </div>
@@ -55,62 +77,15 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
             <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href="independent-offroll/index"
-                >School is independent and pupil is off roll
+              <a class="govuk-heading-m" href="index-terminalcritical">
+                Terminal or critical illness
               </a>
             </h2>
           </div>
           <div class="govuk-summary-card__content">
             <p class="govuk-body">
-              <strong class="govuk-tag govuk-tag--turquoise">
-                Design complete
-              </strong>
-              <br />
-              <br />
-              'Is the school an independent school?' is Yes and 'Is pupil still
-              on roll at your school/college?' is No.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-summary-card">
-          <div class="govuk-summary-card__title-wrapper">
-            <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href=""
-                >School is an FE college with 14 to 16 provision and pupil is on
-                roll
-              </a>
-            </h2>
-          </div>
-          <div class="govuk-summary-card__content">
-            <p class="govuk-body">
-              <strong class="govuk-tag govuk-tag--yellow"> In progress </strong>
-              <br />
-              <br />
-              'Is the school an FE college with 14 to 16 provision?' is Yes and
-              'Is pupil still on roll at your school/college?' is Yes.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="govuk-grid-column-one-half">
-        <div class="govuk-summary-card">
-          <div class="govuk-summary-card__title-wrapper">
-            <h2 class="govuk-summary-card__title">
-              <a class="govuk-heading-m" href=""
-                >School is an FE college with 14 to 16 provision and pupil is on
-                roll
-              </a>
-            </h2>
-          </div>
-          <div class="govuk-summary-card__content">
-            <p class="govuk-body">
-              <strong class="govuk-tag govuk-tag--red"> Not started </strong>
-              <br />
-              <br />
-              'Is the school an FE college with 14 to 16 provision?' is Yes and
-              'Is pupil still on roll at your school/college?' is No.
+              Journey changes when removal reason is Terminal or critical
+              illness.
             </p>
           </div>
         </div>
