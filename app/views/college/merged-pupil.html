@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Which pupil record do
+you want to merge? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {%
+block content %}
+<a href="removal-reason-yes" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="merged-reason" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  <span class="govuk-caption-l"
+                    >Request for Lewis Marshall (UPN: 6293018)
+                  </span>
+                  Which pupil record do you want to merge?
+                </h1>
+              </legend>
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="pupil">
+                  Select the UPN of the duplicate pupil record
+                </label>
+
+                <select class="govuk-select" id="pupil" name="sort">
+                  <option value="">Select a UPN</option>
+                  <option value="1020305">John Adams (UPN: 1020305)</option>
+                  <option value="3021249">Susan Allen (UPN: 3021249)</option>
+                  <option value="4816301">Joe Bell (UPN: 4816301)</option>
+                  <option value="3500281">
+                    Stephen Collins (UPN: 3500281)
+                  </option>
+                  <option value="4729001">
+                    Stephen Collins (UPN: 4729001)
+                  </option>
+                  <option value="9304812">
+                    Samantha Davidson (UPN: 9304812)
+                  </option>
+                  <option value="1094722">Olive Forester (UPN: 1094722)</option>
+                  <option value="8003948">
+                    Katherine Parker (UPN: 8003948)
+                  </option>
+                  <option value="4802812">
+                    Hamish Richards (UPN: 4802812)
+                  </option>
+                  <option value="1232122">Ryan Scott (UPN: 1232122)</option>
+                  <option value="1232125">Hannah Taylor (UPN: 6029312)</option>
+                </select>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

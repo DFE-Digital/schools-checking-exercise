@@ -1,0 +1,63 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Are their whereabouts
+known? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+<a href="removal-reason-no" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="locate-missing" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Hamish Richards (UPN: 4802812)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  Are their whereabouts known?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="whereabouts-yes"
+                    name="whereabouts"
+                    type="radio"
+                    value="yes"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="whereabouts-yes"
+                  >
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="whereabouts-no"
+                    name="whereabouts"
+                    type="radio"
+                    value="no"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="whereabouts-no"
+                  >
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

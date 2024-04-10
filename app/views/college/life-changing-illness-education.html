@@ -1,0 +1,85 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they been diagnosed
+with a life changing illness? – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+<a href="critical-illness-education" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form
+          class="form"
+          action="life-changing-injury-education"
+          method="post"
+        >
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Lewis Marshall (UPN: 6293018)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  Have they been diagnosed with a life changing illness?
+                </h1>q
+              </legend>
+              <p class="govuk-body">
+                A life changing illness is a medical condition or disease that
+                requires ongoing treatment and support.
+              </p>
+              <details class="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Examples of life changing illness
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  <p class="govuk-body">This includes:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>cancer</li>
+                    <li>multiple sclerosis</li>
+                  </ul>
+                </div>
+              </details>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="illness-yes"
+                    name="illness"
+                    type="radio"
+                    value="yes"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="illness-yes"
+                  >
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="illness-no"
+                    name="illness"
+                    type="radio"
+                    value="no"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="illness-no"
+                  >
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

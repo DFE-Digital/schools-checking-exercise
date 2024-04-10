@@ -1,0 +1,116 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Check your pupil details
+– {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a href="your-details" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="create-request" method="post">
+          <h1 class="govuk-heading-l">Check your pupil details</h1>
+          <p class="govuk-body">
+            Download a list of pupils we have on roll for your school or
+            college. We use this list to calculate your
+            <a href="">school or college performance data</a>, unless you
+            request a change.
+          </p>
+          <table class="govuk-table">
+            <caption class="govuk-table__caption govuk-table__caption--m">
+              Pupil name and Unique Pupil Number (UPN)
+            </caption>
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Name</th>
+                <th scope="col" class="govuk-table__header">UPN</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">John Adams</td>
+                <td class="govuk-table__cell">1020305</td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Susan Allen</td>
+                <td class="govuk-table__cell">3021249</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Joe Bell</td>
+                <td class="govuk-table__cell">4816301</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Stephen Collins</td>
+                <td class="govuk-table__cell">3500281</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Stephen Collins</td>
+                <td class="govuk-table__cell">4729001</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Samantha Davidson</td>
+                <td class="govuk-table__cell">9304812</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Olive Forester</td>
+                <td class="govuk-table__cell">1094722</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Lewis Marshall</td>
+                <td class="govuk-table__cell">6293018</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Katherine Parker</td>
+                <td class="govuk-table__cell">8003948</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Hamish Richards</td>
+                <td class="govuk-table__cell">4802812</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Ryan Scott</td>
+                <td class="govuk-table__cell">1232122</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Hannah Taylor</td>
+                <td class="govuk-table__cell">6029312</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Holly Webster</td>
+                <td class="govuk-table__cell">1204823</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class="govuk-heading-m">Download pupil details</h2>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="#">
+                Newcastle Bridges School (URN: 145361), pupil roll data (PDF)</a
+              >
+            </li>
+            <li>
+              <a class="govuk-link" href="#">
+                Newcastle Bridges School (URN: 145361), pupil roll data (CSV)</a
+              >
+            </li>
+          </ul>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                If a pupil is missing
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              If you think a pupil is missing from your list, contact us by
+              email <a href="">CYPMD.HELPLINE@education.gov.uk</a> or phone
+              03001312762.
+            </div>
+          </details>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

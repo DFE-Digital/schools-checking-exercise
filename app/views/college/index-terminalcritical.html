@@ -1,0 +1,153 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} –
+GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a href="index" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Terminal or critical illness</h1>
+        <p class="govuk-body">
+          This journey has been split so users only see 'Has this had a severe
+          effect on their ability to access education or sit exams?' if they
+          answer yes to the relevant questions.
+        </p>
+      </div>
+      <div class="govuk-grid-column-full">
+        <hr
+          class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+        />
+      </div>
+      <div class="govuk-grid-column-full">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+            Start of journey
+          </caption>
+
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Page</th>
+              <th scope="col" class="govuk-table__header" style="width: 20%">
+                Link to page
+              </th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Check your performance measures data (Key stage 4)
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="start">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Your details</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="your-details">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Check your pupil details</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="pupil-details">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Do you want to request to remove a pupil?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="create-request">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                No - Check your answers before submitting your request
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="no-request-summary">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Yes - Who do you want to remove?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="select-student-removed">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Are they currently on roll at your school or college?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="on-roll">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Yes - Why do you want to remove them?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="removal-reason-yes">Link</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="govuk-grid-column-full"></div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="index-terminal-education"
+                >User answers if their education has been impacted
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">The user answers</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                'Yes' to 'Have they been diagnosed with a critical illness for
+                more than 12 months?', or
+              </li>
+              <li>
+                'Yes' to 'Have they been diagnosed with a life changing
+                illness?', or
+              </li>
+              <li>'Yes' to 'Have they had a recent life changing injury?'</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="index-terminal-noeducation"
+                >User does not answer if their education has been impacted
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">The user answers</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                'No' to 'Have they been diagnosed with a critical illness for
+                more than 12 months?', and
+              </li>
+              <li>
+                'No' to 'Have they been diagnosed with a life changing
+                illness?', and
+              </li>
+              <li>'No' to 'Have they had a recent life changing injury?'</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

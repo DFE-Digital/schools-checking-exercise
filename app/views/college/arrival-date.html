@@ -1,0 +1,95 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} When did they arrive in
+England? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+<a href="country-origin" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="admission-date-england" method="post">
+          <div class="govuk-form-group">
+            <fieldset
+              class="govuk-fieldset"
+              role="group"
+              aria-describedby="date-of-arrival-hint"
+            >
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Lewis Marshall (UPN: 6293018)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  When did they arrive in England?
+                </h1>
+              </legend>
+              <div id="date-of-arrival-hint" class="govuk-hint">
+                For example, 31 3 2022
+              </div>
+              <div class="govuk-date-input" id="date-of-arrival">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label
+                      class="govuk-label govuk-date-input__label"
+                      for="date-of-arrival-day"
+                    >
+                      Day
+                    </label>
+                    <input
+                      class="govuk-input govuk-date-input__input govuk-input--width-2"
+                      id="date-of-arrival-day"
+                      name="date-of-arrival-day"
+                      type="text"
+                      autocomplete="arrival-day"
+                      inputmode="numeric"
+                    />
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label
+                      class="govuk-label govuk-date-input__label"
+                      for="date-of-arrival-month"
+                    >
+                      Month
+                    </label>
+                    <input
+                      class="govuk-input govuk-date-input__input govuk-input--width-2"
+                      id="date-of-arrival-month"
+                      name="date-of-arrival-month"
+                      type="text"
+                      autocomplete="arrival-month"
+                      inputmode="numeric"
+                    />
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label
+                      class="govuk-label govuk-date-input__label"
+                      for="date-of-arrival-year"
+                    >
+                      Year
+                    </label>
+                    <input
+                      class="govuk-input govuk-date-input__input govuk-input--width-4"
+                      id="date-of-arrival-year"
+                      name="date-of-arrival-year"
+                      type="text"
+                      autocomplete="arrival-year"
+                      inputmode="numeric"
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

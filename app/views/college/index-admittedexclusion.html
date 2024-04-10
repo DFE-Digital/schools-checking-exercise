@@ -5,11 +5,12 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
   <main class="govuk-main-wrapper" id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">Elective home education</h1>
+        <h1 class="govuk-heading-l">Admitted following permanent exclusion</h1>
         <table class="govuk-table">
           <caption class="govuk-table__caption govuk-table__caption--m">
             Full journey
           </caption>
+
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th scope="col" class="govuk-table__header">Page</th>
@@ -71,28 +72,34 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 <a class="govuk-link" href="on-roll">Link</a>
               </td>
             </tr>
-
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Why do you want to remove them?</td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="removal-reason-no">Link</a>
+                Yes - Why do you want to remove them?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="removal-reason-yes">Link</a>
               </td>
             </tr>
-
             <tr class="govuk-table__row">
+              <td class="govuk-table__cell">What is their first language?</td>
               <td class="govuk-table__cell">
-                When were they removed from your roll?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="home-education">Link</a>
+                <a class="govuk-link" href="first-language">Link</a>
               </td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                Why were they on roll on January 2024's census day? 
+                What school were they excluded from?
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="home-education-reason">Link</a>
+                <a class="govuk-link" href="excluded-urn">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                When were they permanently excluded?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="excluded-date">Link</a>
               </td>
             </tr>
 
@@ -101,13 +108,13 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 Check your answers before submitting evidence
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="home-education-summary">Link</a>
+                <a class="govuk-link" href="excluded-summary">Link</a>
               </td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Upload your evidence</td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="home-education-evidence">Link</a>
+                <a class="govuk-link" href="excluded-evidence">Link</a>
               </td>
             </tr>
             <tr class="govuk-table__row">
@@ -115,7 +122,7 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 Upload your evidence - One document uploaded
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="home-education-evidence-2">Link</a>
+                <a class="govuk-link" href="excluded-evidence-2">Link</a>
               </td>
             </tr>
 
@@ -131,6 +138,7 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 <a class="govuk-link" href="request-complete">Link</a>
               </td>
             </tr>
+
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
                 Check your answers before submitting your request

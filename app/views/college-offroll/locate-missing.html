@@ -1,0 +1,64 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Have your school or
+college and Local Authority made all efforts to find them? – {{ serviceName }} –
+GOV.UK Prototype Kit {% endblock %} {% block content %}
+<a href="missing-education" class="govuk-back-link">Back</a>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form class="form" action="missing-removed-date" method="post">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <span class="govuk-caption-l"
+                  >Request for Hamish Richards (UPN: 4802812)
+                </span>
+                <h1 class="govuk-fieldset__heading">
+                  Have your school or college and Local Authority made all
+                  efforts to find them?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="locate-yes"
+                    name="locate"
+                    type="radio"
+                    value="yes"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="locate-yes"
+                  >
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input
+                    class="govuk-radios__input"
+                    id="locate-no"
+                    name="locate"
+                    type="radio"
+                    value="no"
+                  />
+                  <label
+                    class="govuk-label govuk-radios__label"
+                    for="locate-no"
+                  >
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

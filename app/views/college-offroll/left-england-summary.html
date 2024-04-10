@@ -1,14 +1,14 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
-before submitting this request – {{ serviceName }} – GOV.UK Prototype Kit {%
+before submitting evidence – {{ serviceName }} – GOV.UK Prototype Kit {%
 endblock %} {% block content %}
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="request-complete" method="post">
+        <form class="form" action="left-england-evidence" method="post">
           <div class="govuk-width-container">
             <h1 class="govuk-heading-l">
-              Check your answers before submitting this request
+              Check your answers before submitting evidence
             </h1>
             <h2 class="govuk-heading-m">Pupil being removed and why</h2>
             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
@@ -31,10 +31,23 @@ endblock %} {% block content %}
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
-                  On roll at your school or college
-                </dt>
-                <dd class="govuk-summary-list__value">No</dd>
+                <dt class="govuk-summary-list__key">Removal reason</dt>
+                <dd class="govuk-summary-list__value">
+                  Permanently left England
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="removal-reason-no"
+                    >Change<span class="govuk-visually-hidden">
+                      Removal reason</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">On roll at your school or college</dt>
+                <dd class="govuk-summary-list__value">
+                  No
+                </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="on-roll"
                     >Change<span class="govuk-visually-hidden">
@@ -44,26 +57,25 @@ endblock %} {% block content %}
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Removal reason</dt>
-                <dd class="govuk-summary-list__value">Deceased</dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="removal-reason-no"
-                    >Change<span class="govuk-visually-hidden">
-                      Removal reason</span
-                    ></a
-                  >
-                </dd>
-              </div>
-
-              <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
                   Date of removal from roll
                 </dt>
                 <dd class="govuk-summary-list__value">12 October 2022</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="deceased"
+                  <a class="govuk-link" href="left-england-date"
                     >Change<span class="govuk-visually-hidden">
-                      Date of removal from roll</span
+                      Removal from roll date</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Country they've moved to</dt>
+                <dd class="govuk-summary-list__value">Australia</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="country-moved"
+                    >Change<span class="govuk-visually-hidden">
+                      Country moved to</span
                     ></a
                   >
                 </dd>
@@ -81,7 +93,7 @@ endblock %} {% block content %}
                 class="govuk-button"
                 data-module="govuk-button"
               >
-                Confirm and submit
+                Confirm and upload evidence
               </button>
               <p class="govuk-body">
                 <a href="request-inprogress" class="govuk-link"

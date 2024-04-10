@@ -1,14 +1,13 @@
 {% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} –
 GOV.UK Prototype Kit {% endblock %} {% block content %}
-<a href="index" class="govuk-back-link">Back</a>
+<a href="index-terminalcritical" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper" id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">Elective home education</h1>
         <table class="govuk-table">
-          <caption class="govuk-table__caption govuk-table__caption--m">
-            Full journey
+          <caption class="govuk-table__caption govuk-table__caption--l">
+            User does not answer if their education has been impacted
           </caption>
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
@@ -21,93 +20,72 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                Check your performance measures data (Key stage 4)
+                Have they been diagnosed with a terminal illness?
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="start">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Your details</td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="your-details">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Check your pupil details</td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="pupil-details">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Do you want to request to remove a pupil?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="create-request">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                No - Check your answers before submitting your request
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="no-request-summary">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Yes - Who do you want to remove?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="select-student-removed">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Are they currently on roll at your school or college?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="on-roll">Link</a>
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Why do you want to remove them?</td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="removal-reason-no">Link</a>
+                <a class="govuk-link" href="terminal-diagnosed-noeducation"
+                  >Link</a
+                >
               </td>
             </tr>
 
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                When were they removed from your roll?
+                Have they been diagnosed with a critical illness for more than
+                12 months?
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="home-education">Link</a>
+                <a class="govuk-link" href="critical-illness-noeducation"
+                  >Link</a
+                >
               </td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                Why were they on roll on January 2024's census day? 
+                Have they been diagnosed with a life changing illness?
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="home-education-reason">Link</a>
+                <a class="govuk-link" href="life-changing-illness-noeducation"
+                  >Link</a
+                >
               </td>
             </tr>
-
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they had a recent life changing injury?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="life-changing-injury-noeducation"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they sat any exams as a year 11 pupil?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="sat-exams-terminal-noeducation"
+                  >Link</a
+                >
+              </td>
+            </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
                 Check your answers before submitting evidence
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="home-education-summary">Link</a>
+                <a
+                  class="govuk-link"
+                  href="terminal-critical-summary-noeducation"
+                  >Link</a
+                >
               </td>
             </tr>
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">Upload your evidence</td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="home-education-evidence">Link</a>
+                <a class="govuk-link" href="terminal-critical-evidence">Link</a>
               </td>
             </tr>
             <tr class="govuk-table__row">
@@ -115,14 +93,9 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 Upload your evidence - One document uploaded
               </td>
               <td class="govuk-table__cell">
-                <a class="govuk-link" href="home-education-evidence-2">Link</a>
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Requests - one in progress</td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="request-inprogress">Link</a>
+                <a class="govuk-link" href="terminal-critical-evidence-2"
+                  >Link</a
+                >
               </td>
             </tr>
             <tr class="govuk-table__row">

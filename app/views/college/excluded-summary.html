@@ -1,20 +1,20 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
-before submitting this request – {{ serviceName }} – GOV.UK Prototype Kit {%
+before submitting evidence – {{ serviceName }} – GOV.UK Prototype Kit {%
 endblock %} {% block content %}
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="request-complete" method="post">
+        <form class="form" action="excluded-evidence" method="post">
           <div class="govuk-width-container">
             <h1 class="govuk-heading-l">
-              Check your answers before submitting this request
+              Check your answers before submitting evidence
             </h1>
             <h2 class="govuk-heading-m">Pupil being removed and why</h2>
             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">Pupil name</dt>
-                <dd class="govuk-summary-list__value">Olive Forester</dd>
+                <dd class="govuk-summary-list__value">Lewis Marshall</dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="select-student-removed"
                     >Change<span class="govuk-visually-hidden"> name</span></a
@@ -23,7 +23,7 @@ endblock %} {% block content %}
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">Pupil UPN</dt>
-                <dd class="govuk-summary-list__value">1094722</dd>
+                <dd class="govuk-summary-list__value">6293018</dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="select-student-removed"
                     >Change<span class="govuk-visually-hidden"> upn</span></a
@@ -34,7 +34,7 @@ endblock %} {% block content %}
                 <dt class="govuk-summary-list__key">
                   On roll at your school or college
                 </dt>
-                <dd class="govuk-summary-list__value">No</dd>
+                <dd class="govuk-summary-list__value">Yes</dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="on-roll"
                     >Change<span class="govuk-visually-hidden">
@@ -45,25 +45,41 @@ endblock %} {% block content %}
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">Removal reason</dt>
-                <dd class="govuk-summary-list__value">Deceased</dd>
+                <dd class="govuk-summary-list__value">
+                  Admitted following permanent exclusion
+                </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="removal-reason-no"
+                  <a class="govuk-link" href="removal-reason-yes"
                     >Change<span class="govuk-visually-hidden">
                       Removal reason</span
                     ></a
                   >
                 </dd>
               </div>
-
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Date of removal from roll
+                  School they were excluded from
                 </dt>
-                <dd class="govuk-summary-list__value">12 October 2022</dd>
+                <dd class="govuk-summary-list__value">
+                  Northern Counties School (URN: 108551)
+                </dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="deceased"
+                  <a class="govuk-link" href="permanent-exclusion"
                     >Change<span class="govuk-visually-hidden">
-                      Date of removal from roll</span
+                      School they were excluded from</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Date of permanent exclusion
+                </dt>
+                <dd class="govuk-summary-list__value">24 May 2023</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="permanent-exclusion"
+                    >Change<span class="govuk-visually-hidden">
+                      Date of permanent exclusion</span
                     ></a
                   >
                 </dd>
@@ -81,10 +97,10 @@ endblock %} {% block content %}
                 class="govuk-button"
                 data-module="govuk-button"
               >
-                Confirm and submit
+                Confirm and upload evidence
               </button>
               <p class="govuk-body">
-                <a href="request-inprogress" class="govuk-link"
+                <a href="create-request" class="govuk-link"
                   >Cancel and return to requests</a
                 >
               </p>
