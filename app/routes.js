@@ -69,7 +69,7 @@ router.post("/removal-answer-onroll-independent", function (request, response) {
   } else if (
     removalReason == "Social care involvement - including police or prison"
   ) {
-    response.redirect("independent/social-care-involvement");
+    response.redirect("independent/index-socialcare");
   } else if (removalReason == "Terminal or critical illness") {
     response.redirect("independent/index-terminalcritical");
   } else if (removalReason == "Year group change") {
@@ -138,7 +138,7 @@ router.post(
       response.redirect("independent-offroll/permanent-exclusion");
     } else if (removalReason == "Permanently left England") {
       response.redirect("independent-offroll/left-england-date");
-    } else if (removalReason == "Missing in education") {
+    } else if (removalReason == "Pupil missing in education") {
       response.redirect("independent-offroll/missing-education");
     }
   }
@@ -166,7 +166,7 @@ router.post("/removal-answer-onroll-college", function (request, response) {
   } else if (
     removalReason == "Social care involvement - including police or prison"
   ) {
-    response.redirect("college/social-care-involvement");
+    response.redirect("college/index-socialcare");
   } else if (removalReason == "Terminal or critical illness") {
     response.redirect("college/index-terminalcritical");
   } else if (removalReason == "Year group change") {
@@ -223,22 +223,19 @@ router.post("/offroll-college", function (request, response) {
 });
 
 //removal reason
-router.post(
-  "/removal-answer-offroll-college",
-  function (request, response) {
-    var removalReason = request.session.data["removal-reason"];
-    if (removalReason == "Deceased") {
-      response.redirect("college-offroll/deceased");
-    } else if (removalReason == "Elective home education") {
-      response.redirect("college-offroll/home-education");
-    } else if (removalReason == "Not on roll") {
-      response.redirect("college-offroll/previously-onroll");
-    } else if (removalReason == "Permanently excluded from current school") {
-      response.redirect("college-offroll/permanent-exclusion");
-    } else if (removalReason == "Permanently left England") {
-      response.redirect("college-offroll/left-england-date");
-    } else if (removalReason == "Missing in education") {
-      response.redirect("college-offroll/missing-education");
-    }
+router.post("/removal-answer-offroll-college", function (request, response) {
+  var removalReason = request.session.data["removal-reason"];
+  if (removalReason == "Deceased") {
+    response.redirect("college-offroll/deceased");
+  } else if (removalReason == "Elective home education") {
+    response.redirect("college-offroll/home-education");
+  } else if (removalReason == "Not on roll") {
+    response.redirect("college-offroll/previously-onroll");
+  } else if (removalReason == "Permanently excluded from current school") {
+    response.redirect("college-offroll/permanent-exclusion");
+  } else if (removalReason == "Permanently left England") {
+    response.redirect("college-offroll/left-england-date");
+  } else if (removalReason == "Missing in education") {
+    response.redirect("college-offroll/missing-education");
   }
-);
+});

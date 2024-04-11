@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
-before submitting evidence – {{ serviceName }} – GOV.UK Prototype Kit {%
-endblock %} {% block content %}
+before uploading evidence – {{ serviceName }} – GOV.UK Prototype Kit {% endblock
+%} {% block content %}
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -8,9 +8,9 @@ endblock %} {% block content %}
         <form class="form" action="permanent-exclusion-evidence" method="post">
           <div class="govuk-width-container">
             <h1 class="govuk-heading-l">
-              Check your answers before submitting evidence
+              Check your answers before uploading evidence
             </h1>
-            <h2 class="govuk-heading-m">Pupil being removed and why</h2>
+            <h2 class="govuk-heading-m">Pupil removal request</h2>
             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">Pupil name</dt>
@@ -44,14 +44,14 @@ endblock %} {% block content %}
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Removal reason</dt>
+                <dt class="govuk-summary-list__key">Removal category</dt>
                 <dd class="govuk-summary-list__value">
-                    Permanently excluded from current school
+                  Permanently excluded from current school
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="removal-reason-no"
                     >Change<span class="govuk-visually-hidden">
-                      Removal reason</span
+                      Removal category</span
                     ></a
                   >
                 </dd>
@@ -65,20 +65,33 @@ endblock %} {% block content %}
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="permanent-exclusion"
                     >Change<span class="govuk-visually-hidden">
-                        Date of permanent exclusion</span
+                      Date of permanent exclusion</span
                     ></a
                   >
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  URN of school or college they went on to
+                  URN of school or college they moved to
                 </dt>
                 <dd class="govuk-summary-list__value">40284391</dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="urn-number"
                     >Change<span class="govuk-visually-hidden">
-                        URN of school or college they went on to</span
+                      URN of school or college they went on to</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Reason for being on role on census day
+                </dt>
+                <dd class="govuk-summary-list__value">Accidental</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="permanent-exclusion-reason"
+                    >Change<span class="govuk-visually-hidden">
+                      Reason for being on role on census day</span
                     ></a
                   >
                 </dd>

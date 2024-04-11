@@ -1,0 +1,135 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} {{ serviceName }} –
+GOV.UK Prototype Kit {% endblock %} {% block content %}
+<div class="govuk-width-container">
+  <a href="index-socialcare" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--l">
+            User answers if their education has been impacted
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Page</th>
+              <th scope="col" class="govuk-table__header" style="width: 20%">
+                Link to page
+              </th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they recently been involved with social services?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="social-care-involvement-education"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they recently been involved with the police?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="police-involvement-education"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Has this had a severe and profound effect on their ability to
+                access education or sit exams?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="access-education-socialcare"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they been detained in prison, a remand centre or secure
+                unit for 4 months or more?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="detained-education">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Have they sat any year 11 exams?
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="sat-exams-socialcare-education"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Check your answers before uploading evidence
+              </td>
+              <td class="govuk-table__cell">
+                <a
+                  class="govuk-link"
+                  href="social-care-involvement-summary-education"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Upload your evidence</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="social-care-involvement-evidence"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Upload your evidence - One document uploaded
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="social-care-involvement-evidence-2"
+                  >Link</a
+                >
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Requests - One in progress</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="request-inprogress">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Requests - One complete</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="request-complete">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                Check your answers before submitting your request
+              </td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="request-summary">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Application complete</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="complete">Link</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

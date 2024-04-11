@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
-before submitting evidence – {{ serviceName }} – GOV.UK Prototype Kit {%
-endblock %} {% block content %}
+before uploading evidence – {{ serviceName }} – GOV.UK Prototype Kit {% endblock
+%} {% block content %}
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -12,9 +12,9 @@ endblock %} {% block content %}
         >
           <div class="govuk-width-container">
             <h1 class="govuk-heading-l">
-              Check your answers before submitting evidence
+              Check your answers before uploading evidence
             </h1>
-            <h2 class="govuk-heading-m">Pupil being removed and why</h2>
+            <h2 class="govuk-heading-m">Pupil removal request</h2>
             <dl class="govuk-summary-list govuk-!-margin-bottom-9">
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">Pupil name</dt>
@@ -48,25 +48,29 @@ endblock %} {% block content %}
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Removal reason</dt>
+                <dt class="govuk-summary-list__key">Removal category</dt>
                 <dd class="govuk-summary-list__value">
                   Social care involvement - including police or prison
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="removal-reason-yes"
                     >Change<span class="govuk-visually-hidden">
-                      Removal reason</span
+                      Removal category</span
                     ></a
                   >
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">Social care involvement</dt>
+                <dt class="govuk-summary-list__key">
+                  Social services involvement
+                </dt>
                 <dd class="govuk-summary-list__value">Yes</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="social-care-involvement"
+                  <a
+                    class="govuk-link"
+                    href="social-care-involvement-noeducation"
                     >Change<span class="govuk-visually-hidden">
-                      Social care involvement</span
+                      Social services involvement</span
                     ></a
                   >
                 </dd>
@@ -75,20 +79,21 @@ endblock %} {% block content %}
                 <dt class="govuk-summary-list__key">Police involvement</dt>
                 <dd class="govuk-summary-list__value">Yes</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="police-involvement"
+                  <a class="govuk-link" href="police-involvement-noeducation"
                     >Change<span class="govuk-visually-hidden">
                       Police involvement</span
                     ></a
                   >
                 </dd>
               </div>
+
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
                   Detained in prison, remand centre or secure unit
                 </dt>
                 <dd class="govuk-summary-list__value">Yes</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="detained"
+                  <a class="govuk-link" href="detained-noeducation"
                     >Change<span class="govuk-visually-hidden">
                       Detained in prison, remand centre or secure unit</span
                     ></a
@@ -97,14 +102,14 @@ endblock %} {% block content %}
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Detained in prison, remand centre or secure unit
+                  Sat exams as a year 11 pupil
                 </dt>
-                <dd class="govuk-summary-list__value">Yes</dd>
+                <dd class="govuk-summary-list__value">No</dd>
                 <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="detained"
+                  <a class="govuk-link" href="sat-exams-socialcare-noeducation"
                     >Change<span class="govuk-visually-hidden">
-                      Detained in prison, remand centre or secure unit</span
-                    ></a
+                      Sat exams as a year 11 pupil
+                    </span></a
                   >
                 </dd>
               </div>

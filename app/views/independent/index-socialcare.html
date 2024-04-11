@@ -9,10 +9,21 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
         <h1 class="govuk-heading-l">
           Social care involvement - including police or prison
         </h1>
-
+        <p class="govuk-body">
+          This journey has been split so users only see 'Has this had a severe
+          and profound effect on their ability to access education or sit
+          exams?' if they answer yes to the relevant questions.
+        </p>
+      </div>
+      <div class="govuk-grid-column-full">
+        <hr
+          class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+        />
+      </div>
+      <div class="govuk-grid-column-two-thirds">
         <table class="govuk-table">
           <caption class="govuk-table__caption govuk-table__caption--m">
-            Full journey
+            Start of journey
           </caption>
 
           <thead class="govuk-table__head">
@@ -39,7 +50,7 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
               </td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Check your pupil details</td>
+              <td class="govuk-table__cell">Your pupil details</td>
               <td class="govuk-table__cell">
                 <a class="govuk-link" href="pupil-details">Link</a>
               </td>
@@ -84,94 +95,66 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 <a class="govuk-link" href="removal-reason-yes">Link</a>
               </td>
             </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Have they had recent social care involvement that has had a
-                severe or profound effect on their ability to access education
-                or sit exams?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="social-care-involvement">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Have they had recent police involvement which has had a severe
-                or profound effect on their ability to access education or sit
-                exams?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="police-involvement">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Have they been detained in prison, a remand centre or secure
-                unit?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="detained">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Have they sat any year 11 exams?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="sat-exams-socialcare">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Check your answers before submitting evidence
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="social-care-involvement-summary"
-                  >Link</a
-                >
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Upload your evidence</td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="social-care-involvement-evidence"
-                  >Link</a
-                >
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Upload your evidence - One document uploaded
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="social-care-involvement-evidence-2"
-                  >Link</a
-                >
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Requests - one complete</td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="request-complete">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Check your answers before submitting your request
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="request-summary">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Application complete</td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="complete">Link</a>
-              </td>
-            </tr>
           </tbody>
         </table>
+      </div>
+      <div class="govuk-grid-column-full">
+        <hr
+          class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+        />
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="index-socialcare-education"
+                >User answers if their education has been impacted
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">The user answers</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                'Yes' to 'Have they recently been involved with social
+                services?', or
+              </li>
+              <li>
+                'Yes' to 'Have they recently been involved with the police?'
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="index-socialcare-noeducation"
+                >User does not answer if their education has been impacted
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">The user answers</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                'No' to 'Have they recently been involved with social
+                services?', and
+              </li>
+              <li>
+                'No' to 'Have they recently been involved with the police?'
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-full">
+        <hr
+          class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+        />
+      </div>
+      <div class="govuk-grid-column-two-thirds">
         <table class="govuk-table">
           <caption class="govuk-table__caption govuk-table__caption--m">
             Header pages

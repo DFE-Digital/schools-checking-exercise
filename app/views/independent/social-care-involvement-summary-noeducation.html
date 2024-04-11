@@ -1,0 +1,144 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Check your answers
+before uploading evidence – {{ serviceName }} – GOV.UK Prototype Kit {% endblock
+%} {% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form
+          class="form"
+          action="social-care-involvement-evidence"
+          method="post"
+        >
+          <div class="govuk-width-container">
+            <h1 class="govuk-heading-l">
+              Check your answers before uploading evidence
+            </h1>
+            <h2 class="govuk-heading-m">Pupil removal request</h2>
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Pupil name</dt>
+                <dd class="govuk-summary-list__value">Hannah Taylor</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="select-student-removed"
+                    >Change<span class="govuk-visually-hidden"> name</span></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Pupil UPN</dt>
+                <dd class="govuk-summary-list__value">6029312</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="select-student-removed"
+                    >Change<span class="govuk-visually-hidden"> upn</span></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  On roll at your school or college
+                </dt>
+                <dd class="govuk-summary-list__value">Yes</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="on-roll"
+                    >Change<span class="govuk-visually-hidden">
+                      On roll at your school or college
+                    </span></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Removal category</dt>
+                <dd class="govuk-summary-list__value">
+                  Social care involvement - including police or prison
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="removal-reason-yes"
+                    >Change<span class="govuk-visually-hidden">
+                      Removal category</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Social services involvement
+                </dt>
+                <dd class="govuk-summary-list__value">Yes</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a
+                    class="govuk-link"
+                    href="social-care-involvement-noeducation"
+                    >Change<span class="govuk-visually-hidden">
+                      Social services involvement</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">Police involvement</dt>
+                <dd class="govuk-summary-list__value">Yes</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="police-involvement-noeducation"
+                    >Change<span class="govuk-visually-hidden">
+                      Police involvement</span
+                    ></a
+                  >
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Detained in prison, remand centre or secure unit
+                </dt>
+                <dd class="govuk-summary-list__value">Yes</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="detained-noeducation"
+                    >Change<span class="govuk-visually-hidden">
+                      Detained in prison, remand centre or secure unit</span
+                    ></a
+                  >
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Sat exams as a year 11 pupil
+                </dt>
+                <dd class="govuk-summary-list__value">No</dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="sat-exams-socialcare-noeducation"
+                    >Change<span class="govuk-visually-hidden">
+                      Sat exams as a year 11 pupil
+                    </span></a
+                  >
+                </dd>
+              </div>
+            </dl>
+
+            <h2 class="govuk-heading-m">Declaration</h2>
+            <p class="govuk-body">
+              I confirm that the information I have given is correct.
+            </p>
+            <form action="/form-handler" method="post" novalidate>
+              <input type="hidden" name="answers-checked" value="true" />
+              <button
+                type="submit"
+                class="govuk-button"
+                data-module="govuk-button"
+              >
+                Confirm and upload evidence
+              </button>
+              <p class="govuk-body">
+                <a href="create-request" class="govuk-link"
+                  >Cancel and return to requests</a
+                >
+              </p>
+            </form>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

@@ -1,5 +1,5 @@
-{% extends "layouts/main.html" %} {% block pageTitle %}What school were they
-excluded from? {% endblock %} {% block content %}
+{% extends "layouts/main.html" %} {% block pageTitle %}Which school were they
+permanently excluded from? {% endblock %} {% block content %}
 <div class="govuk-width-container">
   <a href="removal-reason-yes" class="govuk-back-link">Back</a>
 
@@ -8,12 +8,14 @@ excluded from? {% endblock %} {% block content %}
       <div class="govuk-grid-column-two-thirds">
         <form class="form" action="excluded-date" method="post">
           <span class="govuk-caption-l"
-            >Request for Lewis Marshall (UPN: 6293018) 
+            >Request for Lewis Marshall (UPN: 6293018)
           </span>
-          <h1 class="govuk-heading-l">What school were they excluded from?</h1>
+          <h1 class="govuk-heading-l">
+            Which school were they permanently excluded from?
+          </h1>
           <div class="govuk-form-group">
             <label class="govuk-label" for="width-10">
-              Enter the URN of the school or college
+              Enter the unique reference number (URN) of the excluding school
             </label>
             <input
               class="govuk-input govuk-input--width-10"
@@ -25,12 +27,14 @@ excluded from? {% endblock %} {% block content %}
           <details class="govuk-details">
             <summary class="govuk-details__summary">
               <span class="govuk-details__summary-text">
-                Help to find a URN
+                Help to find the URN
               </span>
             </summary>
             <div class="govuk-details__text">
-              To find a unique reference number (URN), search a school or
-              college name on <a href="">Get Information about Schools</a>.
+              To find the URN, search the school or college name on
+              <a href="https://www.get-information-schools.service.gov.uk/"
+                >Get Information about Schools</a
+              >.
             </div>
           </details>
           <button type="submit" class="govuk-button" data-module="govuk-button">

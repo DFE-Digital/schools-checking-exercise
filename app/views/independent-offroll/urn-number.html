@@ -1,5 +1,5 @@
-{% extends "layouts/main.html" %} {% block pageTitle %}What school or college
-did they go on to? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {%
+{% extends "layouts/main.html" %} {% block pageTitle %} Which school or college
+have they moved to? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {%
 block content %}
 <div class="govuk-width-container">
   <a href="permanent-exclusion" class="govuk-back-link">Back</a>
@@ -7,16 +7,16 @@ block content %}
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="permanent-exclusion-summary" method="post">
+        <form class="form" action="permanent-exclusion-reason" method="post">
           <span class="govuk-caption-l"
             >Request for Olive Forester (UPN: 1094722)
           </span>
           <h1 class="govuk-heading-l">
-            What school or college did they go on to?
+            Which school or college have they moved to?
           </h1>
           <div class="govuk-form-group">
             <label class="govuk-label" for="width-10">
-              Enter the URN of the school or college
+              Enter the unique reference number (URN) of the school or college
             </label>
             <input
               class="govuk-input govuk-input--width-10"
@@ -28,12 +28,14 @@ block content %}
           <details class="govuk-details">
             <summary class="govuk-details__summary">
               <span class="govuk-details__summary-text">
-                Help to find a URN
+                Help to find the URN
               </span>
             </summary>
             <div class="govuk-details__text">
-              To find a unique reference number (URN), search a school or
-              college name on <a href="">Get Information about Schools</a>.
+              To find the URN, search the school or college name on
+              <a href="https://www.get-information-schools.service.gov.uk/"
+                >Get Information about Schools</a
+              >.
             </div>
           </details>
           <button type="submit" class="govuk-button" data-module="govuk-button">

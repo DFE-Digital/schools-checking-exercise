@@ -9,8 +9,8 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
         <h1 class="govuk-heading-l">Terminal or critical illness</h1>
         <p class="govuk-body">
           This journey has been split so users only see 'Has this had a severe
-          effect on their ability to access education or sit exams?' if they
-          answer yes to the relevant questions.
+          and profound effect on their ability to access education or sit
+          exams?' if they answer yes to the relevant questions.
         </p>
       </div>
       <div class="govuk-grid-column-full">
@@ -18,7 +18,7 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
           class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
         />
       </div>
-      <div class="govuk-grid-column-full">
+      <div class="govuk-grid-column-two-thirds">
         <table class="govuk-table">
           <caption class="govuk-table__caption govuk-table__caption--m">
             Start of journey
@@ -48,7 +48,7 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
               </td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Check your pupil details</td>
+              <td class="govuk-table__cell">Your pupil details</td>
               <td class="govuk-table__cell">
                 <a class="govuk-link" href="pupil-details">Link</a>
               </td>
@@ -96,7 +96,11 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
           </tbody>
         </table>
       </div>
-      <div class="govuk-grid-column-full"></div>
+      <div class="govuk-grid-column-full">
+        <hr
+          class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+        />
+      </div>
       <div class="govuk-grid-column-one-half">
         <div class="govuk-summary-card">
           <div class="govuk-summary-card__title-wrapper">
@@ -146,6 +150,40 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
             </ul>
           </div>
         </div>
+      </div>
+      <div class="govuk-grid-column-full">
+        <hr
+          class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+        />
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+            Header pages
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Page</th>
+              <th scope="col" class="govuk-table__header" style="width: 20%">
+                Link to page
+              </th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Your details</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="/header-pupil-details">Link</a>
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Your pupil details</td>
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="/header-your-details">Link</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </main>

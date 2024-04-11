@@ -1,14 +1,13 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Have they had recent
-police involvement which has had a severe or profound effect on their ability to
-access education or sit exams? – {{ serviceName }} – GOV.UK Prototype Kit {%
-endblock %} {% block content %}
+{% extends "layouts/main.html" %} {% block pageTitle %} Have they been detained
+in prison, a remand centre or secure unit for 4 months or more? – {{ serviceName
+}} – GOV.UK Prototype Kit {% endblock %} {% block content %}
 <div class="govuk-width-container">
-  <a href="social-care-involvement" class="govuk-back-link">Back</a>
+  <a href="police-involvement-noeducation" class="govuk-back-link">Back</a>
 
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form class="form" action="detained" method="post">
+        <form class="form" action="sat-exams-socialcare-noeducation" method="post">
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -16,27 +15,22 @@ endblock %} {% block content %}
                   >Request for Hannah Taylor (UPN: 6029312)
                 </span>
                 <h1 class="govuk-fieldset__heading">
-                  Have they had recent police involvement which has had a severe
-                  or profound effect on their ability to access education or sit
-                  exams?
+                  Have they been detained in prison, a remand centre or secure
+                  unit for 4 months or more?
                 </h1>
               </legend>
-              <div id="police-involvement-hint" class="govuk-hint">
-                For example, restrictions that have been put in place by the
-                police
-              </div>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="police-involvement-yes"
-                    name="police-involvement"
+                    id="detained-yes"
+                    name="detained"
                     type="radio"
                     value="yes"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="police-involvement-yes"
+                    for="detained-yes"
                   >
                     Yes
                   </label>
@@ -44,14 +38,14 @@ endblock %} {% block content %}
                 <div class="govuk-radios__item">
                   <input
                     class="govuk-radios__input"
-                    id="police-involvement-no"
-                    name="police-involvement"
+                    id="detained-no"
+                    name="detained"
                     type="radio"
                     value="no"
                   />
                   <label
                     class="govuk-label govuk-radios__label"
-                    for="police-involvement-no"
+                    for="detained-no"
                   >
                     No
                   </label>

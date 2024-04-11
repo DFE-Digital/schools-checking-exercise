@@ -7,10 +7,20 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-l">Year group change</h1>
-
+        <p class="govuk-body">
+          This journey splits when the user selects what year group the pupil
+          has moved to.
+        </p>
+      </div>
+      <div class="govuk-grid-column-full">
+        <hr
+          class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+        />
+      </div>
+      <div class="govuk-grid-column-two-thirds">
         <table class="govuk-table">
           <caption class="govuk-table__caption govuk-table__caption--m">
-            Full journey
+            Start of journey
           </caption>
 
           <thead class="govuk-table__head">
@@ -37,7 +47,7 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
               </td>
             </tr>
             <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Check your pupil details</td>
+              <td class="govuk-table__cell">Your pupil details</td>
               <td class="govuk-table__cell">
                 <a class="govuk-link" href="pupil-details">Link</a>
               </td>
@@ -82,76 +92,66 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
                 <a class="govuk-link" href="removal-reason-yes">Link</a>
               </td>
             </tr>
-
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                What year group are they changing to?
+                Which year group have they changed to?
               </td>
               <td class="govuk-table__cell">
                 <a class="govuk-link" href="year-group-move">Link</a>
               </td>
             </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Higher than 11 - Where did they complete their year 11 studies?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="year-group-higher">Link</a>
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Higher than 11 - Check your answers before submitting this
-                request
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="year-group-summary-higher">Link</a>
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Lower than 11 - Why have they changed year group?
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="year-group-lower">Link</a>
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Lower than 11 - Check your answers before submitting this
-                request
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="year-group-summary-lower">Link</a>
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Requests - one complete</td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="request-complete">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                Check your answers before submitting your request
-              </td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="request-summary">Link</a>
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">Application complete</td>
-              <td class="govuk-table__cell">
-                <a class="govuk-link" href="complete">Link</a>
-              </td>
-            </tr>
           </tbody>
         </table>
+      </div>
+
+      <div class="govuk-grid-column-full">
+        <hr
+          class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+        />
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="index-yeargroup-lower"
+                >Pupil moved to a lower year group
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">The year group the pupil moved to is</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Year 8, or</li>
+              <li>Year 9, or</li>
+              <li>Year 10</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <div class="govuk-summary-card">
+          <div class="govuk-summary-card__title-wrapper">
+            <h2 class="govuk-summary-card__title">
+              <a class="govuk-heading-m" href="index-yeargroup-higher"
+                >Pupil moved to a higher year group
+              </a>
+            </h2>
+          </div>
+          <div class="govuk-summary-card__content">
+            <p class="govuk-body">The year group the pupil moved to is</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Year 12, or</li>
+              <li>Year 13</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-column-full">
+        <hr
+          class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+        />
+      </div>
+      <div class="govuk-grid-column-two-thirds">
         <table class="govuk-table">
           <caption class="govuk-table__caption govuk-table__caption--m">
             Header pages
