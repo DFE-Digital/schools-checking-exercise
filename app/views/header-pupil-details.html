@@ -1,12 +1,12 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Your pupil details
-– {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+{% extends "layouts/main.html" %} {% block pageTitle %} Your pupil details – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <form class="form" action="" method="post">
           <h1 class="govuk-heading-l">Your pupil details</h1>
-  
+
           <table class="govuk-table">
             <caption class="govuk-table__caption govuk-table__caption--m">
               Pupil name and Unique Pupil Number (UPN)
@@ -73,30 +73,37 @@
               </tr>
             </tbody>
           </table>
-          <h2 class="govuk-heading-m">Download pupil details</h2>
+          <h2 class="govuk-heading-m">Download your pupil details</h2>
 
           <ul class="govuk-list">
             <li>
               <a class="govuk-link" href="#">
-                Newcastle Bridges School (URN: 145361), pupil roll data (PDF)</a
+                Newcastle Bridges School, pupil roll data (PDF)</a
               >
             </li>
             <li>
               <a class="govuk-link" href="#">
-                Newcastle Bridges School (URN: 145361), pupil roll data (CSV)</a
+                Newcastle Bridges School, pupil roll data (CSV)</a
               >
             </li>
           </ul>
           <details class="govuk-details">
             <summary class="govuk-details__summary">
               <span class="govuk-details__summary-text">
-                If a pupil is missing
+                If a pupil is missing from your list
               </span>
             </summary>
             <div class="govuk-details__text">
-              If you think a pupil is missing from your list, contact us by
-              email <a href="">CYPMD.HELPLINE@education.gov.uk</a> or phone
-              03001312762.
+              <p class="govuk-body">
+                If you think a pupil is missing from your list:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>
+                  send an email to
+                  <a href="">CYPMD.HELPLINE@education.gov.uk</a>
+                </li>
+                <li>phone the helpdesk on 03001312762</li>
+              </ul>
             </div>
           </details>
           <button type="submit" class="govuk-button" data-module="govuk-button">

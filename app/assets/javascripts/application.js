@@ -3,8 +3,12 @@
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
 //
 
-
 window.GOVUKPrototypeKit.documentReady(() => {
+  let selectElement = document.querySelector("#selectAutocomplete");
 
+  accessibleAutocomplete.enhanceSelectElement({
+    defaultValue: "",
+
+    selectElement: selectElement,
+  });
 });
-

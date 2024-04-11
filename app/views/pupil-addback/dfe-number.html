@@ -1,8 +1,9 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} Where did they complete
 their year 11 studies this academic year? – {{ serviceName }} – GOV.UK Prototype
 Kit {% endblock %} {% block content %}
-<a href="removal-reason" class="govuk-back-link">Back</a>
 <div class="govuk-width-container">
+  <a href="removal-reason" class="govuk-back-link">Back</a>
+
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
@@ -15,7 +16,7 @@ Kit {% endblock %} {% block content %}
           </h1>
           <div class="govuk-form-group">
             <label class="govuk-label" for="width-10">
-              Enter the URN of the school or college
+              Enter the unique reference number (URN) of the school or college
             </label>
             <input
               class="govuk-input govuk-input--width-10"
@@ -31,8 +32,8 @@ Kit {% endblock %} {% block content %}
               </span>
             </summary>
             <div class="govuk-details__text">
-              To find a unique reference number (URN), search a school or
-              college name on <a href="">Get Information about Schools</a>.
+              To find the URN, search the school or college name on
+              <a href="">Get Information about Schools</a>.
             </div>
           </details>
           <button type="submit" class="govuk-button" data-module="govuk-button">

@@ -1,18 +1,40 @@
-{% extends "layouts/main.html" %} {% block pageTitle %} Check your pupil details
-– {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
-<a href="your-details" class="govuk-back-link">Back</a>
+{% extends "layouts/main.html" %} {% block pageTitle %} Your pupil details – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
 <div class="govuk-width-container">
+  <a href="your-details" class="govuk-back-link">Back</a>
+
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <form class="form" action="create-request" method="post">
-          <h1 class="govuk-heading-l">Check your pupil details</h1>
+          <h1 class="govuk-heading-l">Your pupil details</h1>
           <p class="govuk-body">
-            Download a list of pupils we have on roll for your school or
-            college. We use this list to calculate your
+            We use this list of key stage 4 pupils to calculate your
             <a href="">school or college performance data</a>, unless you
             request a change.
           </p>
+          <details class="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Where your pupil details come from
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <p class="govuk-body">
+                For state funded schools, key stage 4 pupils are identified at
+                the time of the 2024 spring (January) school census, if:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>they were on roll at the school, and</li>
+                <li>in year 11</li>
+              </ul>
+              <p class="govuk-body">
+                If you are an independent school or further education college,
+                your list is based on exam entries data. We explain how we
+                collect this data in the <a href="">guidance</a>.
+              </p>
+            </div>
+          </details>
           <table class="govuk-table">
             <caption class="govuk-table__caption govuk-table__caption--m">
               Pupil name and Unique Pupil Number (UPN)
@@ -79,30 +101,37 @@
               </tr>
             </tbody>
           </table>
-          <h2 class="govuk-heading-m">Download pupil details</h2>
+          <h2 class="govuk-heading-m">Download your pupil details</h2>
 
           <ul class="govuk-list">
             <li>
               <a class="govuk-link" href="#">
-                Newcastle Bridges School (URN: 145361), pupil roll data (PDF)</a
+                Newcastle Bridges School, pupil roll data (PDF)</a
               >
             </li>
             <li>
               <a class="govuk-link" href="#">
-                Newcastle Bridges School (URN: 145361), pupil roll data (CSV)</a
+                Newcastle Bridges School, pupil roll data (CSV)</a
               >
             </li>
           </ul>
           <details class="govuk-details">
             <summary class="govuk-details__summary">
               <span class="govuk-details__summary-text">
-                If a pupil is missing
+                If a pupil is missing from your list
               </span>
             </summary>
             <div class="govuk-details__text">
-              If you think a pupil is missing from your list, contact us by
-              email <a href="">CYPMD.HELPLINE@education.gov.uk</a> or phone
-              03001312762.
+              <p class="govuk-body">
+                If you think a pupil is missing from your list:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>
+                  send an email to
+                  <a href="">CYPMD.HELPLINE@education.gov.uk</a>
+                </li>
+                <li>phone the helpdesk on 03001312762</li>
+              </ul>
             </div>
           </details>
           <button type="submit" class="govuk-button" data-module="govuk-button">

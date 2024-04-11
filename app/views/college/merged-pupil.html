@@ -1,8 +1,14 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} Which pupil record do
 you want to merge? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {%
 block content %}
-<a href="removal-reason-yes" class="govuk-back-link">Back</a>
+<script
+  type="text/javascript"
+  src="assets/js/accessible-autocomplete.min.js"
+></script>
+<link rel="stylesheet" href="assets/css/accessible-autocomplete.min.css" />
 <div class="govuk-width-container">
+  <a href="removal-reason-yes" class="govuk-back-link">Back</a>
+
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
@@ -19,10 +25,14 @@ block content %}
               </legend>
               <div class="govuk-form-group">
                 <label class="govuk-label" for="pupil">
-                  Select the UPN of the duplicate pupil record
+                  Start typing pupil name or URN
                 </label>
 
-                <select class="govuk-select" id="pupil" name="sort">
+                <select
+                  class="govuk-select"
+                  id="selectAutocomplete"
+                  name="sort"
+                >
                   <option value="">Select a UPN</option>
                   <option value="1020305">John Adams (UPN: 1020305)</option>
                   <option value="3021249">Susan Allen (UPN: 3021249)</option>

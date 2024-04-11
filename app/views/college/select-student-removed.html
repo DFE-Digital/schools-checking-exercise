@@ -1,8 +1,14 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} Who do you want to
 remove? – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
 content %}
-<a href="create-request" class="govuk-back-link">Back</a>
+<script
+  type="text/javascript"
+  src="assets/js/accessible-autocomplete.min.js"
+></script>
+<link rel="stylesheet" href="assets/css/accessible-autocomplete.min.css" />
 <div class="govuk-width-container">
+  <a href="create-request" class="govuk-back-link">Back</a>
+
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
@@ -14,8 +20,12 @@ content %}
                   Who do you want to remove?
                 </h1>
               </legend>
+
               <div class="govuk-form-group">
-                <select class="govuk-select" id="sort" name="sort">
+                <label class="govuk-label" for="location">
+                  Enter pupil name or URN
+                </label>
+                <select class="govuk-select" id="selectAutocomplete" name="sort">
                   <option value="">Select a pupil</option>
                   <option value="1020305">John Adams (UPN: 1020305)</option>
                   <option value="3021249">Susan Allen (UPN: 3021249)</option>

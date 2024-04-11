@@ -28,3 +28,18 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts #} {% extends
   ]
 }) }}
 {% endblock %}
+
+{% block scripts %}
+
+  {{ super() }}
+
+  <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+
+{% endblock %}
+{% block stylesheets %}
+
+  {{ super() }}
+
+  <link href="/public/css/accessible-autocomplete.min.css" rel="stylesheet" type="text/css" />
+
+{% endblock %}

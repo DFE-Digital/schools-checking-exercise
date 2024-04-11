@@ -16,3 +16,8 @@
 	margin-top: 15px;
 	margin-bottom: 10px;
 }
+.autocomplete__wrapper * {
+
+  @include govuk-typography-common();
+
+}
