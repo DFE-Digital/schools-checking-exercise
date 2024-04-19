@@ -1,0 +1,28 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Elective home education
+– {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <a href="index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Elective home education</h1>
+        <h2 class="govuk-heading-m">Design changes</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          On the evidence page the text area is mandatory and asks for an
+          explanation why the pupil was still on roll in January 2024's census
+          day. This has been implemented as it's own question in the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This text area is not relevant to evidence being uploaded. This makes
+          it more straightforward for the user to understand what is needed from
+          them.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

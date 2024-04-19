@@ -1,0 +1,67 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Ideal flow – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <a href="social-police#recommendations" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l"
+          >Social care involvement - including police or prison</span
+        >
+        <h1 class="govuk-heading-l">Ideal flow</h1>
+      </div>
+      <div class="govuk-grid-column-full">
+        <img
+          src="/public/images/Social care and police involvement - Ideal.png"
+          alt="Flow chart of the ideal flow for social care involvement. Steps are outlined below."
+        />
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">
+          <a
+            href="/public/images/Social care and police involvement - Ideal.png"
+            target="_blank"
+          >
+            Open this flow chart as it's own image (opens in a new tab).
+          </a>
+        </p>
+        <h2 class="govuk-heading-m">Process description</h2>
+        <p class="govuk-body">
+          1. Have they been recently involved with social services?
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If yes, proceed to step 3.</li>
+          <li>If no, proceed to step 2.</li>
+        </ul>
+        <p class="govuk-body">
+          2. Have they recently been involved with the police?
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If yes, proceed to step 3.</li>
+          <li>If no, proceed to step 4.</li>
+        </ul>
+        <p class="govuk-body">
+          3. Has this had a severe and profound effect on their ability to
+          access education or sit exams?
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If yes, proceed to step 5.</li>
+          <li>If no, proceed to step 4.</li>
+        </ul>
+        <p class="govuk-body">
+          4. Have they been detained in prison, a remand centre or secure unit
+          for 4 months or more?
+        </p>
+
+        <p class="govuk-body">5. Have they sat any year 11 exams?</p>
+
+        <p class="govuk-body">6. Summary</p>
+
+        <p class="govuk-body">7. Evidence</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

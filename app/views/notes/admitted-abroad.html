@@ -1,0 +1,166 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Admitted from abroad
+with English not first language – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <a href="index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">
+          Admitted from abroad with English not first language
+        </h1>
+        <h2 class="govuk-heading-m">Design changes</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> 'What
+          is their country of origin?' country is now an accessible autocomplete
+          -
+          <a href="https://github.com/alphagov/accessible-autocomplete"
+            >Accessible autocomplete - Alpha Gov (github.com)</a
+          >
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Selects have accessibility issues, this allows the user to type the
+          specific country they want.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> On
+          the form 'Date of arrival' is marked as optional, but the user can't
+          continue their journey without entering a date. We have assumed this
+          is mandatory and now exists as it's own question.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          If we don't need to collect information, we shouldn't. It seems
+          mandatory on the form, so including it made sense.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> On
+          the evidence page the text area for Additional comments has been
+          removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          It's not clear what we would expect from this. Removing it simplifies
+          the journey.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> On
+          the form evidence is marked as optional, however the guidance says
+          this is mandatory. The guidance is linked through the evidence screen.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Following the guidance.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h2 class="govuk-heading-m">Flow changes</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> After
+          splitting the 3 questions into separate pages, these have also been
+          reordered. We ask
+        </p>
+        <ul class="govuk-list govuk-list--number">
+          <li>'When did they arrive?', then</li>
+          <li>'When did they enrol at school college in England?', then</li>
+          <li>'When did they enrol at your school or college?'</li>
+        </ul>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          If these dates are different, this will mean they are entered in
+          chronological order. This is more straightforward for the user and
+          means they won't have to jump around in the timeline.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h2 class="govuk-heading-m">Recommendations</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          'What is their first language?' page
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Provide a clearer list of more descriptive options and include how
+          this can impact the outcome.
+        </p>
+        <p class="govuk-body">
+          This could even be restructured to more straightforward questions
+          depending on what is needed from this question. For example,
+        </p>
+        <ul class="govuk-list govuk-list--number">
+          <li>'Do you know their first language? Yes or No'</li>
+          <li>Yes - 'What is their first language? Accessible autocomplete'</li>
+          <li>
+            No - 'Is this believed to be English, or have they refused to
+            disclose this? Yes or No'
+          </li>
+        </ul>
+        <p class="govuk-body">
+          This will not cover all scenarios as it's not clear how these answers
+          impact the user and the outcome.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          The options are not fully clear. 'Not known but believed English' and
+          'Not known but believed other than English' seem to put the
+          responsibility on the user, with no knowledge about how this impacts
+          the outcome.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          Flow of the questions
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Change the structure of these questions, for example
+        </p>
+        <ul class="govuk-list govuk-list--number">
+          <li>
+            'When did they enrol at a school or college in England?', then
+          </li>
+          <li>
+            'Is this the same date that they enrolled at your school or college?
+            Yes or No'
+          </li>
+          <li>Yes - 'When did they enrol at your school or college?'</li>
+        </ul>
+        <p class="govuk-body">
+          This helps break the question style up, helping the user understand
+          the differences in questions.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          'When did they enrol at a school or college in England?' and 'When did
+          they enrol at your school or college?' are extremely similar questions
+          that could cause confusion among users.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

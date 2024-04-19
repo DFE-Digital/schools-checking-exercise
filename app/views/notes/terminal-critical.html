@@ -1,0 +1,113 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Terminal or critical illness –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <a href="index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Terminal or critical illness</h1>
+        <h2 class="govuk-heading-m">Design changes</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Removed 'Has John Smith been under investigation for a serious or life
+          changing illness for 12 months or more?'
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          We do not need to know this information as per the guidance. We have
+          to ask the user if they've had a critical illness for longer than 12
+          months, and we cover this in a previous question.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-m" id="flow-changes">Flow changes</h2>
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-visually-hidden">Warning</span>
+            If routing is not going to be implemented, follow
+            <a href="terminal-critical-flow-mvp">this flow without it</a>
+            instead.
+          </strong>
+        </div>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          'Has this had a severe and profound effect on their ability to access
+          education or sit exams?' is only asked if the user answers yes to
+          either
+        </p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            'Have they recently been diagnosed with a life changing illness?',
+            or
+          </li>
+          <li>
+            'Have they recently been diagnosed with a life changing injury?'
+          </li>
+        </ul>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          According to the guidance and current questions these are the only
+          times we need to know if the pupil has been impacted in a severe way.
+          This change means we can ask the users only relevant questions and not
+          increase their cognitive load unnecessarily.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Implementation:</span
+          >
+          <a href="terminal-critical-flow-implemented"
+            >Link to implemented flow</a
+          >.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h2 class="govuk-heading-m" id="recommendations">Recommendations</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          Flow of the questions
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Change the flow so the user can answer the minimum amount of questions
+          to get to their summary and evidence page.
+        </p>
+        <p class="govuk-body">
+          This means that when the user answers Yes to questions that fulfil a
+          removal criteria they skip the remaining questions. For example,
+        </p>
+        <ul class="govuk-list govuk-list--number">
+          <li>'Have they been diagnosed with a terminal illness? Yes or No'</li>
+          <li>Yes - 'Have they sat any year 11 exams? Yes or No'</li>
+          <li>Journey goes to Summary, then Evidence.</li>
+        </ul>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          The user has to answer every question in the flow even if they fulfil
+          the first case of the pupil being diagnosed with a terminal illness.
+          This could cause stress and worry that the pupil does not fulfil the
+          right criteria.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Implementation:</span
+          >
+          <a href="terminal-critical-flow-ideal">Link to ideal flow</a>.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

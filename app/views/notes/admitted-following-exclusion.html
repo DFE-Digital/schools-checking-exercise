@@ -1,0 +1,44 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Admitted following
+permanent exclusion – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {%
+block content %}
+
+<div class="govuk-width-container">
+  <a href="index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Admitted following permanent exclusion</h1>
+
+        <h2 class="govuk-heading-m">Recommendations</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          'Which school were they permanently excluded from?' page
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Use an accessible autocomplete based on the Select a school pattern.
+          <a
+            href="https://design.education.gov.uk/design-system/patterns/select-a-school"
+            >Select a school (design.education.gov.uk)</a
+          >. This will give the user the option to find the URN by searching for
+          a school name, college name or URN.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          If the user does not know the URN of the school or college they have
+          to leave the service to find it. There doesn't seem to be an option to
+          enter the school or college name either, assuming that this would be
+          more memorable for the user. This breaks up their journey and makes it
+          inefficient and more effort for them.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

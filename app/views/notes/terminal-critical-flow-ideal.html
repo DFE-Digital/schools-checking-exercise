@@ -1,0 +1,89 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Ideal flow – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <a href="terminal-critical#recommendations" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Terminal or critical illness</span>
+        <h1 class="govuk-heading-l">Ideal flow</h1>
+      </div>
+      <div class="govuk-grid-column-full">
+        <img
+          src="/public/images/Terminal or critical illness - Ideal.png"
+          alt="Flow chart of the ideal flow for terminal or critical illness. Steps are outlined below."
+        />
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">
+          <a
+            href="/public/images/Terminal or critical illness - Ideal.png"
+            target="_blank"
+          >
+            Open this flow chart as it's own image (opens in a new tab).
+          </a>
+        </p>
+        <h2 class="govuk-heading-m">Process description</h2>
+        <p class="govuk-body">
+          1. Have they been diagnosed with a terminal illness?
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If yes, proceed to step 8.</li>
+          <li>If no, proceed to step 2.</li>
+        </ul>
+        <p class="govuk-body">
+          2. Have they been diagnosed with a critical illness for more than 12
+          months?
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If yes, proceed to step 3.</li>
+          <li>If no, proceed to step 4.</li>
+        </ul>
+        <p class="govuk-body">
+          3. Has this had a severe and profound effect on their ability to
+          access education or sit exams?
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If yes, proceed to step 8.</li>
+          <li>If no, proceed to step 4.</li>
+        </ul>
+        <p class="govuk-body">
+          4. Have they recently been diagnosed with a life changing illness?
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If yes, proceed to step 5.</li>
+          <li>If no, proceed to step 6.</li>
+        </ul>
+        <p class="govuk-body">
+          5. Has this had a severe and profound effect on their ability to
+          access education or sit exams?
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If yes, proceed to step 8.</li>
+          <li>If no, proceed to step 6.</li>
+        </ul>
+        <p class="govuk-body">
+          6. Have they recently been diagnosed with a life changing injury?
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If yes, proceed to step 7.</li>
+          <li>If no, proceed to step 8.</li>
+        </ul>
+        <p class="govuk-body">
+          7. Has this had a severe and profound effect on their ability to
+          access education or sit exams?
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>If yes, proceed to step 8.</li>
+          <li>If no, proceed to step 9.</li>
+        </ul>
+        <p class="govuk-body">8. Have they sat any year 11 exams?</p>
+        <p class="govuk-body">9. Summary</p>
+        <p class="govuk-body">10. Evidence</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

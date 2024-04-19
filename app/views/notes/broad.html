@@ -1,0 +1,97 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Changes that impact
+multiple journeys – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {%
+block content %}
+
+<div class="govuk-width-container">
+  <a href="index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Changes that impact multiple journeys</h1>
+        <h2 class="govuk-heading-m">Design changes</h2>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Questions are split into individual pages.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Aligns with the Design System -
+          <a
+            href="https://design-system.service.gov.uk/patterns/question-pages/"
+            >Question pages (design-system.service.gov.uk)</a
+          >. answers.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Yes and No radio questions are not inline and Yes is the first option.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Helps the user understand what is really needed from them.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          On the evidence page the text area for Additional comments has been
+          removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span> If we
+          don't need to collect information, we shouldn't. It seems mandatory on
+          the form, so including it made sense.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Summary comes before Evidence screen in every journey where evidence
+          is mandatory.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The user may not have their evidence to hand when entering the system.
+          This gives them the opportunity to submit the answers to the forms and
+          come back to upload evidence later.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Back buttons are kept on every question page.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Aligns with the Design System -
+          <a href="https://design-system.service.gov.uk/components/back-link/"
+            >Back link (design-system.service.gov.uk</a
+          >.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Every journey has a summary page.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Aligns with the Design System -
+          <a href="https://design-system.service.gov.uk/patterns/check-answers/"
+            >Check answers (design-system.service.gov.uk)</a
+          >. Keeps the service consistent.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

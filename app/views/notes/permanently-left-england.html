@@ -1,0 +1,44 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Permanently left
+England – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+
+<div class="govuk-width-container">
+  <a href="index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Permanently left England</h1>
+        <h2 class="govuk-heading-m">Design changes</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          'What is their country of origin?' country is now an accessible
+          autocomplete -
+          <a href="https://github.com/alphagov/accessible-autocomplete"
+            >Accessible autocomplete - Alpha Gov (github.com)</a
+          >
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Selects have accessibility issues, this allows the user to type the
+          specific country they want.
+        </p>
+
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          On the evidence page the text area for Additional comments has been
+          removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          It's not clear what we would expect from this. Removing it simplifies
+          the journey.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

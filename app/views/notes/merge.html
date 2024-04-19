@@ -1,0 +1,77 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Merge pupils – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <a href="index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Merge pupils</h1>
+        <h2 class="govuk-heading-m">Design changes</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          'Which pupil record do you want to merge?' pupil selection is now an
+          accessible autocomplete -
+          <a href="https://github.com/alphagov/accessible-autocomplete"
+            >Accessible autocomplete - Alpha Gov (github.com)</a
+          >.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Some schools will have a lot of pupils, this gives them a way to find
+          pupils through their name or UPN while still maintaining
+          accessibility.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          On the evidence page the text area is mandatory and asks for an
+          explanation why the merge needs to happen. This has been implemented
+          as it's own question in the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This text area is not relevant to evidence being uploaded, especially
+          since evidence is optional and this is mandatory. This makes it more
+          straightforward for the user to understand what is needed from them.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Evidence screen has been removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The guidance says that evidence for this journey is optional.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h2 class="govuk-heading-m">Recommendations</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          'Explain why the pupil record needs to be merged' page
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Include an example or 2 as hint text under the question.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          It is not clear what we expect from users here.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

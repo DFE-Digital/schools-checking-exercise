@@ -1,0 +1,36 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Pupil missing in
+education – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+
+<div class="govuk-width-container">
+  <a href="index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Pupil missing in education</h1>
+
+        <h2 class="govuk-heading-m">Recommendations</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          'Are their whereabouts known?' page
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Remove this page.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          If the user selects that the pupil is missing in education, it feels
+          like this implies their whereabouts are not known.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

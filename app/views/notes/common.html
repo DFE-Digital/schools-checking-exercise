@@ -1,0 +1,263 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Pages that appear in every journey –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <a href="index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Pages that appear in every journey</h1>
+
+        <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What pages are included
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                Start page - Check your performance measures data (Key stage 4)
+              </li>
+              <li>Your details</li>
+              <li>Your pupil details</li>
+              <li>No - Check your answers before submitting a request</li>
+              <li>Yes - Who do you want to remove?</li>
+              <li>
+                Summary pages - Check your answers before submitting request or
+                uploading evidence
+              </li>
+              <li>Upload your evidence</li>
+              <li>Upload your evidence - One document uploaded</li>
+              <li>Requests - One in progress</li>
+              <li>Requests - One complete</li>
+              <li>Application complete</li>
+              <li>Header - Your details</li>
+              <li>Header - Your pupil details</li>
+            </ul>
+          </div>
+        </details>
+
+        <h2 class="govuk-heading-m">Design changes</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> 'Your
+          details' now includes a section giving the user information if they
+          need to change their details.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Currently 'Your details' seems like a reference page with no
+          call-to-action. Users shouldn't step through this page if there is no
+          action to take.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Changed table structure for 'Your pupil details'. Table has a title
+          and Name and UPN have moved to become column headings.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Currently 'Student name' is repeated in every row, this change avoids
+          repetition throughout the table. This takes up less space and is
+          easier for screen readers.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Pupil UPN has been added as a column in 'Your pupil details'.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          UPN is referenced throughout the journey, especially when pupils need
+          merged. If the user needs to reference this page it is useful to give
+          them all pupil details needed throughout the journey.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Pupil details are in alphabetical order (by last name).
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          There should be structure to the names. It's an assumption that if
+          students need merged the names would be similar, so this could make it
+          easier to spot. Another assumption is that the users would know pupils
+          by name first, before their UPN.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Header now has links to 'Your details', 'Your pupil details',' 'DfE
+          account' and 'Sign out'.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Gives the user the option to access reference pages at any point
+          during their journey. They can also access their account that they've
+          signed in with, and they are able to sign out.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Changed the 'Create a request' page to a question, 'Do you want to
+          request to remove a pupil?'
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Has the same behaviour as the current form, however is more clear and
+          provides a call-to-action.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          When the user does not want to make a request, the structure of the
+          summary page has changed. The radio buttons are removed in favour of a
+          summary table where the user can change that specific answer.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Currently the radio buttons don't have an impact. The change uses a
+          standard Design System pattern -
+          <a href="https://design-system.service.gov.uk/patterns/check-answers/"
+            >Check answers (design-system.service.gov.uk)</a
+          >.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          'Who do you want to remove?' pupil selection is now an accessible
+          autocomplete -
+          <a href="https://github.com/alphagov/accessible-autocomplete"
+            >Accessible autocomplete - Alpha Gov (github.com)</a
+          >.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Some schools will have a lot of pupils, this gives them a way to find
+          pupils through their name or UPN while still maintaining
+          accessibility.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Evidence upload page uses the File upload component -
+          <a href="https://design-system.service.gov.uk/components/file-upload/"
+            >File upload (design-system.service.gov.uk)</a
+          >.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Keeps the service in line with the Design System.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h2 class="govuk-heading-m">Flow changes</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> Users
+          can access another version of the 'Your details' page from the header.
+          This version does not have a section giving information to change
+          their details.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This can be used as a reference point and is accessible at any point
+          during their journey.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> Users
+          can access another version of the 'Your pupil details' page from the
+          header. This version has less information.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This can be used as a reference point and is accessible at any point
+          during their journey.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> Check
+          your answers before submitting request or uploading evidence follow
+          the Check answers pattern -
+          <a href="https://design-system.service.gov.uk/patterns/check-answers/"
+            >Check answers (design-system.service.gov.uk)</a
+          >. The user can change specific answers from these screens.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This can be used as a reference point and is accessible at any point
+          during their journey.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Evidence upload has been restructured. Text areas that are included on
+          the pages have been removed. If the text area is required (e.g for Not
+          on roll), this has been added as a question to the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This keeps the one question a page structure. This means the user will
+          have less chance of timing out when uploading evidence if there is a
+          required answer. The text areas aren't always relevant to uploading
+          files, so this can minimise users assuming they're connected.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h2 class="govuk-heading-m">Recommendations</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          Flow of the pages
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Skip this page in the journey and let the user access their pupil
+          details through the header. Flow would be
+        </p>
+        <ul class="govuk-list govuk-list--number">
+          <li>'Your details', then</li>
+          <li>'Do you want to request to remove a pupil?'</li>
+        </ul>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          'Your pupil details' can be over 100 pupils long. This page is
+          currently just used as a reference point so it's not necessary for the
+          user to land on this.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

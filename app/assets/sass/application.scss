@@ -1,23 +1,24 @@
 //
 // For guidance on how to add CSS and SCSS see:
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
-// 
+//
 
 // Add extra styles here
 
-
 .related-navigation {
-    color: #0b0c0c;
-    border-top: 2px solid #1d70b8;
-    margin-bottom: 60px;
-  }
+  color: #0b0c0c;
+  border-top: 2px solid #1d70b8;
+  margin-bottom: 60px;
+}
 
-  .related-navigation__main-heading {
-	margin-top: 15px;
-	margin-bottom: 10px;
+.related-navigation__main-heading {
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 .autocomplete__wrapper * {
-
   @include govuk-typography-common();
+}
 
+img {
+  max-width: 100%;
 }

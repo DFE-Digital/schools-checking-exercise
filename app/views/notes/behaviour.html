@@ -1,0 +1,96 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Behaviour to change or
+implement – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
+
+<div class="govuk-width-container">
+  <a href="index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Behaviour to change or implement</h1>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          On summary pages when the user changes an answer and then clicks
+          continue, it returns to the summary page.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Aligns with the Design System -
+          <a href="https://design-system.service.gov.uk/patterns/check-answers/"
+            >Check answers (design-system.service.gov.uk)</a
+          >.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          Request is only in the state 'In progress' if the user exits the
+          upload evidence screen before submitting.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The journey doesn't save or have an option to exit throughout. This
+          gives the user the opportunity to come back to upload their evidence
+          later.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          When a request is In progress, the user can continue to upload
+          evidence or delete the request. When a request is complete, the user
+          can only view or delete the request.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The user wouldn't need to continue a request that is complete.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          Once a user has a request made, their name should not appear on the
+          pupil name list and merged name list.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Means the user won't accidentally choose the wrong name. Appearing in
+          the initial pupil name selection could confuse them that they haven't
+          made their request yet.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          Once a pupil is selected, their name should not appear in the merged
+          pupil list.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Means the user won't accidentally choose the same pupil to merge with.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          'Cancel and return to requests' from Evidence screens takes you to
+          'Your requests' with the request in progress.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This gives the user the opportunity to come back to upload their
+          evidence later.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
