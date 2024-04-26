@@ -22,3 +22,17 @@
 img {
   max-width: 100%;
 }
+
+.list-item--dashed span::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  overflow: hidden;
+}
+
+.list-item--dashed {
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+}

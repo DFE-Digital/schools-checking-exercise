@@ -3,11 +3,12 @@ every journey – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% b
 content %}
 
 <div class="govuk-width-container">
-  <a href="index" class="govuk-back-link">Back</a>
+  <a href="/notes/index" class="govuk-back-link">Back</a>
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">Pages that appear in every journey</h1>
+        <span class="govuk-caption-l"> Pages that appear in every journey</span>
+        <h1 class="govuk-heading-l">Implemented design and flow changes</h1>
 
         <details class="govuk-details">
           <summary class="govuk-details__summary">
@@ -280,33 +281,6 @@ content %}
         <p class="govuk-body">
           <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
           <strong class="govuk-tag govuk-tag--red"> High </strong>
-        </p>
-        <hr
-          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
-        />
-        <h2 class="govuk-heading-m">Recommendations</h2>
-        <p class="govuk-body">
-          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
-          Flow of the pages
-        </p>
-        <p class="govuk-body">
-          <span class="govuk-body govuk-!-font-weight-bold"
-            >Recommendation:</span
-          >
-          Skip this page in the journey and let the user access their pupil
-          details through the header. Flow would be
-        </p>
-        <ul class="govuk-list govuk-list--number">
-          <li>'Your details', then</li>
-          <li>'Do you want to request to remove a pupil?'</li>
-        </ul>
-        <p class="govuk-body">
-          <span class="govuk-body govuk-!-font-weight-bold"
-            >Reason to change:</span
-          >
-          'Your pupil details' can be over 100 pupils long. This page is
-          currently just used as a reference point so it's not necessary for the
-          user to land on this.
         </p>
       </div>
     </div>

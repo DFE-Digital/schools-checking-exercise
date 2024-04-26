@@ -1,0 +1,1340 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Implemented design and
+flow changes and recommendations – {{ serviceName }} – GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+
+<div class="govuk-width-container" id="top">
+  <a href="/notes/index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+          Implemented design and flow changes and recommendations
+        </h1>
+        <p class="govuk-body">Contents</p>
+        <ul class="govuk-list list-item--dashed">
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#multiple-journeys"
+              >Multiple journeys</a
+            >
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#common"
+              >Pages that appear in every journey</a
+            >
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#admitted-abroad"
+              >Admitted from abroad with English not first language</a
+            >
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#completed-ks4"
+              >Completed KS4 studies this academic year in year 11 at another
+              school or college</a
+            >
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#deceased">Deceased</a>
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#home-education"
+              >Elective home education</a
+            >
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#merge-pupils">Merge pupils</a>
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#not-on-roll">Not on roll</a>
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#permanently-excluded"
+              >Permanently excluded from current school
+            </a>
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#left-england"
+              >Permanently left England
+            </a>
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#social-police"
+              >Social care involvement - including police or prison
+            </a>
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#terminal-critical"
+              >Terminal or critical illness
+            </a>
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#year-group-change"
+              >Year group change
+            </a>
+          </li>
+          <li>
+            <span aria-hidden="true"></span>
+            <a class="govuk-link" href="#behaviour"
+              >Behaviour to change or implement
+            </a>
+          </li>
+        </ul>
+        <hr
+          class="govuk-section-break govuk-section-break--l govuk-section-break--visible"
+        />
+        <h2 class="govuk-heading-l" id="multiple-journeys">
+          Multiple journeys
+        </h2>
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Questions are split into individual pages.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Aligns with the Design System -
+          <a
+            href="https://design-system.service.gov.uk/patterns/question-pages/"
+            >Question pages (design-system.service.gov.uk)</a
+          >. answers.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Yes and No radio questions are not inline and Yes is the first option.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Helps the user understand what is really needed from them.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          On the evidence page the text area for Additional comments has been
+          removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span> If we
+          don't need to collect information, we shouldn't. It seems mandatory on
+          the form, so including it made sense.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Summary comes before Evidence screen in every journey where evidence
+          is mandatory.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The user may not have their evidence to hand when entering the system.
+          This gives them the opportunity to submit the answers to the forms and
+          come back to upload evidence later.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Back buttons are kept on every question page.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Aligns with the Design System -
+          <a href="https://design-system.service.gov.uk/components/back-link/"
+            >Back link (design-system.service.gov.uk</a
+          >.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Every journey has a summary page.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Aligns with the Design System -
+          <a href="https://design-system.service.gov.uk/patterns/check-answers/"
+            >Check answers (design-system.service.gov.uk)</a
+          >. Keeps the service consistent.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="common">
+          Pages that appear in every journey
+        </h2>
+
+        <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What pages are included
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <ul class="govuk-list govuk-list--bullet">
+              <li>
+                Start page - Check your performance measures data (Key stage 4)
+              </li>
+              <li>Your details</li>
+              <li>Your pupil details</li>
+              <li>No - Check your answers before submitting a request</li>
+              <li>Yes - Who do you want to remove?</li>
+              <li>
+                Summary pages - Check your answers before submitting request or
+                uploading evidence
+              </li>
+              <li>Upload your evidence</li>
+              <li>Upload your evidence - One document uploaded</li>
+              <li>Requests - One in progress</li>
+              <li>Requests - One complete</li>
+              <li>Application complete</li>
+              <li>Header - Your details</li>
+              <li>Header - Your pupil details</li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> 'Your
+          details' now includes a section giving the user information if they
+          need to change their details.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Currently 'Your details' seems like a reference page with no
+          call-to-action. Users shouldn't step through this page if there is no
+          action to take.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--yellow"> Low </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Changed table structure for 'Your pupil details'. Table has a title
+          and Name and UPN have moved to become column headings.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Currently 'Student name' is repeated in every row, this change avoids
+          repetition throughout the table. This takes up less space and is
+          easier for screen readers.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--yellow"> Low </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Pupil UPN has been added as a column in 'Your pupil details'.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          UPN is referenced throughout the journey, especially when pupils need
+          merged. If the user needs to reference this page it is useful to give
+          them all pupil details needed throughout the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Pupil details are in alphabetical order (by last name).
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          There should be structure to the names. It's an assumption that if
+          students need merged the names would be similar, so this could make it
+          easier to spot. Another assumption is that the users would know pupils
+          by name first, before their UPN.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Header now has links to 'Your details', 'Your pupil details',' 'DfE
+          account' and 'Sign out'.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Gives the user the option to access reference pages at any point
+          during their journey. They can also access their account that they've
+          signed in with, and they are able to sign out.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Changed the 'Create a request' page to a question, 'Do you want to
+          request to remove a pupil?'
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Has the same behaviour as the current form, however is more clear and
+          provides a call-to-action.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          When the user does not want to make a request, the structure of the
+          summary page has changed. The radio buttons are removed in favour of a
+          summary table where the user can change that specific answer.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Currently the radio buttons don't have an impact. The change uses a
+          standard Design System pattern -
+          <a href="https://design-system.service.gov.uk/patterns/check-answers/"
+            >Check answers (design-system.service.gov.uk)</a
+          >.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          'Who do you want to remove?' pupil selection is now an accessible
+          autocomplete -
+          <a href="https://github.com/alphagov/accessible-autocomplete"
+            >Accessible autocomplete - Alpha Gov (github.com)</a
+          >.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Some schools will have a lot of pupils, this gives them a way to find
+          pupils through their name or UPN while still maintaining
+          accessibility.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Evidence upload page uses the File upload component -
+          <a href="https://design-system.service.gov.uk/components/file-upload/"
+            >File upload (design-system.service.gov.uk)</a
+          >.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Keeps the service in line with the Design System.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h3 class="govuk-heading-m">Flow changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> Users
+          can access another version of the 'Your details' page from the header.
+          This version does not have a section giving information to change
+          their details.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This can be used as a reference point and is accessible at any point
+          during their journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--yellow"> Low </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> Users
+          can access another version of the 'Your pupil details' page from the
+          header. This version has less information.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This can be used as a reference point and is accessible at any point
+          during their journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> Check
+          your answers before submitting request or uploading evidence follow
+          the Check answers pattern -
+          <a href="https://design-system.service.gov.uk/patterns/check-answers/"
+            >Check answers (design-system.service.gov.uk)</a
+          >. The user can change specific answers from these screens.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This can be used as a reference point and is accessible at any point
+          during their journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Evidence upload has been restructured. Text areas that are included on
+          the pages have been removed. If the text area is required (e.g for Not
+          on roll), this has been added as a question to the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This keeps the one question a page structure. This means the user will
+          have less chance of timing out when uploading evidence if there is a
+          required answer. The text areas aren't always relevant to uploading
+          files, so this can minimise users assuming they're connected.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="admitted-abroad">
+          Admitted from abroad with English not first language
+        </h2>
+
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> 'What
+          is their country of origin?' country is now an accessible autocomplete
+          -
+          <a href="https://github.com/alphagov/accessible-autocomplete"
+            >Accessible autocomplete - Alpha Gov (github.com)</a
+          >
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Selects have accessibility issues, this allows the user to type the
+          specific country they want.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> On
+          the form 'Date of arrival' is marked as optional, but the user can't
+          continue their journey without entering a date. We have assumed this
+          is mandatory and now exists as it's own question.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          If we don't need to collect information, we shouldn't. It seems
+          mandatory on the form, so including it made sense.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> On
+          the evidence page the text area for Additional comments has been
+          removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          It's not clear what we would expect from this. Removing it simplifies
+          the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--yellow"> Low </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> On
+          the form evidence is marked as optional, however the guidance says
+          this is mandatory. The guidance is linked through the evidence screen.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Following the guidance.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h3 class="govuk-heading-m">Flow changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> After
+          splitting the 3 questions into separate pages, these have also been
+          reordered. We ask
+        </p>
+        <ul class="govuk-list govuk-list--number">
+          <li>'When did they arrive?', then</li>
+          <li>'When did they enrol at school college in England?', then</li>
+          <li>'When did they enrol at your school or college?'</li>
+        </ul>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          If these dates are different, this will mean they are entered in
+          chronological order. This is more straightforward for the user and
+          means they won't have to jump around in the timeline.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h3 class="govuk-heading-m">Recommendations</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          'What is their first language?' page
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Provide a clearer list of more descriptive options and include how
+          this can impact the outcome.
+        </p>
+        <p class="govuk-body">
+          This could even be restructured to more straightforward questions
+          depending on what is needed from this question. For example,
+        </p>
+        <ul class="govuk-list govuk-list--number">
+          <li>'Do you know their first language? Yes or No'</li>
+          <li>Yes - 'What is their first language? Accessible autocomplete'</li>
+          <li>
+            No - 'Is this believed to be English, or have they refused to
+            disclose this? Yes or No'
+          </li>
+        </ul>
+        <p class="govuk-body">
+          This will not cover all scenarios as it's not clear how these answers
+          impact the user and the outcome.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          The options are not fully clear. 'Not known but believed English' and
+          'Not known but believed other than English' seem to put the
+          responsibility on the user, with no knowledge about how this impacts
+          the outcome.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          Flow of the questions
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Change the structure of these questions, for example
+        </p>
+        <ul class="govuk-list govuk-list--number">
+          <li>
+            'When did they enrol at a school or college in England?', then
+          </li>
+          <li>
+            'Is this the same date that they enrolled at your school or college?
+            Yes or No'
+          </li>
+          <li>Yes - 'When did they enrol at your school or college?'</li>
+        </ul>
+        <p class="govuk-body">
+          This helps break the question style up, helping the user understand
+          the differences in questions.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          'When did they enrol at a school or college in England?' and 'When did
+          they enrol at your school or college?' are extremely similar questions
+          that could cause confusion among users.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="completed-ks4">
+          Completed KS4 studies this academic year in year 11 at another school
+          or college
+        </h2>
+
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Evidence screen has been removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The guidance says that evidence for this journey is optional.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h3 class="govuk-heading-m">Recommendations</h3>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          'Where did they complete their year 11 studies this academic year?'
+          page
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Use an accessible autocomplete based on the Select a school pattern.
+          <a
+            href="https://design.education.gov.uk/design-system/patterns/select-a-school"
+            >Select a school (design.education.gov.uk)</a
+          >. This will give the user the option to find the URN by searching for
+          a school name, college name or URN.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          If the user does not know the URN of the school or college they have
+          to leave the service to find it. There doesn't seem to be an option to
+          enter the school or college name either, assuming that this would be
+          more memorable for the user. This breaks up their journey and makes it
+          inefficient and more effort for them.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h2 class="govuk-heading-l" id="deceased">Deceased</h2>
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Evidence screen has been removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The guidance says that evidence for this journey is optional.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="home-education">
+          Elective home education
+        </h2>
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          On the evidence page the text area is mandatory and asks for an
+          explanation why the pupil was still on roll in January 2024's census
+          day. This has been implemented as it's own question in the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This text area is not relevant to evidence being uploaded. This makes
+          it more straightforward for the user to understand what is needed from
+          them.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="merge-pupils">Merge pupils</h2>
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          'Which pupil record do you want to merge?' pupil selection is now an
+          accessible autocomplete -
+          <a href="https://github.com/alphagov/accessible-autocomplete"
+            >Accessible autocomplete - Alpha Gov (github.com)</a
+          >.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Some schools will have a lot of pupils, this gives them a way to find
+          pupils through their name or UPN while still maintaining
+          accessibility.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          On the evidence page the text area is mandatory and asks for an
+          explanation why the merge needs to happen. This has been implemented
+          as it's own question in the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This text area is not relevant to evidence being uploaded, especially
+          since evidence is optional and this is mandatory. This makes it more
+          straightforward for the user to understand what is needed from them.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Evidence screen has been removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The guidance says that evidence for this journey is optional.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h3 class="govuk-heading-m">Recommendations</h3>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          'Explain why the pupil record needs to be merged' page
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Include an example or 2 as hint text under the question.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          It is not clear what we expect from users here.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <h2 class="govuk-heading-l" id="not-on-roll">Not on roll</h2>
+
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          On the evidence page the text area is mandatory and asks for an
+          explanation why the pupil is not on roll. This has been implemented as
+          it's own question in the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This text area is not relevant to evidence being uploaded. This makes
+          it more straightforward for the user to understand what is needed from
+          them.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="permanently-excluded">
+          Permanently excluded from current school
+        </h2>
+
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          On the evidence page the text area is mandatory and asks for an
+          explanation why the pupil was still on roll in January 2024's census
+          day. This has been implemented as it's own question in the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This text area is not relevant to evidence being uploaded. This makes
+          it more straightforward for the user to understand what is needed from
+          them.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h3 class="govuk-heading-m">Recommendations</h3>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          'Which school or college have they moved to?' page
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Use an accessible autocomplete based on the Select a school pattern.
+          <a
+            href="https://design.education.gov.uk/design-system/patterns/select-a-school"
+            >Select a school (design.education.gov.uk)</a
+          >. This will give the user the option to find the URN by searching for
+          a school name, college name or URN.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          If the user does not know the URN of the school or college they have
+          to leave the service to find it. There doesn't seem to be an option to
+          enter the school or college name either, assuming that this would be
+          more memorable for the user. This breaks up their journey and makes it
+          inefficient and more effort for them.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="left-england">
+          Permanently left England
+        </h2>
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          'What is their country of origin?' country is now an accessible
+          autocomplete -
+          <a href="https://github.com/alphagov/accessible-autocomplete"
+            >Accessible autocomplete - Alpha Gov (github.com)</a
+          >
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Selects have accessibility issues, this allows the user to type the
+          specific country they want.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          On the evidence page the text area for Additional comments has been
+          removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          It's not clear what we would expect from this. Removing it simplifies
+          the journey.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--yellow"> Low </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="social-police">
+          Social care involvement - including police or prison
+        </h2>
+
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> Split
+          'Has John Smith been involved in a recent situation that has required
+          social care involvement that has had a severe and profound effect on
+          their ability to access education and/or sit exams?' and 'Has John
+          Smith had recent police involvement which has had a severe and
+          profound effect on their ability to access education and/or sit
+          exams?'
+        </p>
+        <p class="govuk-body">These have been split into</p>
+        <ul class="govuk-list govuk-list--number">
+          <li>'Have they recently been involved with social services?' and</li>
+          <li>'Have they recently been involved with the police?' and</li>
+          <li>
+            'Has this had a severe and profound effect on their ability to
+            access education or sit exams?'
+          </li>
+        </ul>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The current questions are wordy and difficult to understand, splitting
+          them gives the user more time to understand what is being asked of
+          them. This also aligns with what is asked in the guidance.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-m" id="flow-changes">Flow changes</h2>
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-visually-hidden">Warning</span>
+            If routing is not going to be implemented, follow
+            <a href="social-police-flow-mvp">this flow without it</a>
+            instead.
+          </strong>
+        </div>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          'Has this had a severe and profound effect on their ability to access
+          education or sit exams?' is only asked if the user answers yes to
+          either
+        </p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>'Have they recently been involved with social services?', or</li>
+          <li>'Have they recently been involved with the police?'</li>
+        </ul>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          According to the guidance and current questions these are the only
+          times we need to know if the pupil has been impacted in a severe way.
+          This change means we can ask the users only relevant questions and not
+          increase their cognitive load unnecessarily.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Implementation:</span
+          >
+          <a href="social-police-flow-implemented">Link to implemented flow</a>.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h3 class="govuk-heading-m">Recommendations</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          Flow of the questions
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Change the flow so the user can answer the minimum amount of questions
+          to get to their summary and evidence page.
+        </p>
+        <p class="govuk-body">
+          This means that when the user answers Yes to questions that fulfil a
+          removal criteria they skip the remaining questions. For example,
+        </p>
+        <ul class="govuk-list govuk-list--number">
+          <li>
+            'Have they recently been involved with social services? Yes or No'
+          </li>
+          <li>
+            Yes - 'Has this had a severe and profound effect on their ability to
+            access education and sit exams? Yes or No''
+          </li>
+          <li>Yes - 'Have they sat any year 11 exams? Yes or No'</li>
+          <li>Journey goes to Summary, then Evidence.</li>
+        </ul>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          The user has to answer every question in the flow even if they fulfil
+          the first case of the pupil being involved with the police and this
+          having a severe and profound impact on them. This could cause stress
+          and worry that the pupil does not fulfil the right criteria.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Implementation:</span
+          >
+          <a href="social-police-flow-ideal">Link to ideal flow</a>.
+        </p>
+
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="terminal-critical">
+          Terminal or critical illness
+        </h2>
+
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Removed 'Has John Smith been under investigation for a serious or life
+          changing illness for 12 months or more?'
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Screenshot for reference:</span
+          >
+          <a
+            href="/public/images/Terminal or critical illness - Removed question.png"
+            target="_blank"
+          >
+            Open this image (opens in a new tab)
+          </a>
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          We do not need to know this information as per the guidance. We have
+          to ask the user if they've had a critical illness for longer than 12
+          months, and we cover this in a previous question.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--red"> High </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-m" id="flow-changes">Flow changes</h2>
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-visually-hidden">Warning</span>
+            If routing is not going to be implemented, follow
+            <a href="terminal-critical-flow-mvp">this flow without it</a>
+            instead.
+          </strong>
+        </div>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          'Has this had a severe and profound effect on their ability to access
+          education or sit exams?' is only asked if the user answers yes to
+          either
+        </p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            'Have they recently been diagnosed with a life changing illness?',
+            or
+          </li>
+          <li>
+            'Have they recently been diagnosed with a life changing injury?'
+          </li>
+        </ul>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          According to the guidance and current questions these are the only
+          times we need to know if the pupil has been impacted in a severe way.
+          This change means we can ask the users only relevant questions and not
+          increase their cognitive load unnecessarily.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Implementation:</span
+          >
+          <a href="terminal-critical-flow-implemented"
+            >Link to implemented flow</a
+          >.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h3 class="govuk-heading-m">Recommendations</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
+          Flow of the questions
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Recommendation:</span
+          >
+          Change the flow so the user can answer the minimum amount of questions
+          to get to their summary and evidence page.
+        </p>
+        <p class="govuk-body">
+          This means that when the user answers Yes to questions that fulfil a
+          removal criteria they skip the remaining questions. For example,
+        </p>
+        <ul class="govuk-list govuk-list--number">
+          <li>'Have they been diagnosed with a terminal illness? Yes or No'</li>
+          <li>Yes - 'Have they sat any year 11 exams? Yes or No'</li>
+          <li>Journey goes to Summary, then Evidence.</li>
+        </ul>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Reason to change:</span
+          >
+          The user has to answer every question in the flow even if they fulfil
+          the first case of the pupil being diagnosed with a terminal illness.
+          This could cause stress and worry that the pupil does not fulfil the
+          right criteria.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Implementation:</span
+          >
+          <a href="terminal-critical-flow-ideal">Link to ideal flow</a>.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="year-group-change">
+          Year group change
+        </h2>
+        <h3 class="govuk-heading-m">Design changes</h3>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> 'Is
+          John Smith's year group being changed to lower than 11 or higher than
+          11? and 'Please provide the year group John Smith should be moved to?'
+          have been combined into one question. We now ask 'Which year group
+          have they changed to?' and list the years.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span> Both
+          questions aren't needed so this makes the journey more
+          straightforward. It lets us route the form sooner and gives clearer
+          answers.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+
+        <h2 class="govuk-heading-l" id="behaviour">
+          Behaviour to change or implement
+        </h2>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          On summary pages when the user changes an answer and then clicks
+          continue, it returns to the summary page.
+        </p>
+
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Aligns with the Design System -
+          <a href="https://design-system.service.gov.uk/patterns/check-answers/"
+            >Check answers (design-system.service.gov.uk)</a
+          >.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          Request is only in the state 'In progress' if the user exits the
+          upload evidence screen before submitting.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The journey doesn't save or have an option to exit throughout. This
+          gives the user the opportunity to come back to upload their evidence
+          later.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          When a request is In progress, the user can continue to upload
+          evidence or delete the request. When a request is complete, the user
+          can only view or delete the request.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The user wouldn't need to continue a request that is complete.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          Once a user has a request made, their name should not appear on the
+          pupil name list and merged name list.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Means the user won't accidentally choose the wrong name. Appearing in
+          the initial pupil name selection could confuse them that they haven't
+          made their request yet.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          Once a pupil is selected, their name should not appear in the merged
+          pupil list.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          Means the user won't accidentally choose the same pupil to merge with.
+        </p>
+        <hr
+          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
+        />
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Behaviour:</span>
+          'Cancel and return to requests' from Evidence screens takes you to
+          'Your requests' with the request in progress.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          This gives the user the opportunity to come back to upload their
+          evidence later.
+        </p>
+
+        <p class="govuk-body" style="float: right">
+          <a class="govuk-link" href="#top">Back to top</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

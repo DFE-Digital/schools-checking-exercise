@@ -1,17 +1,31 @@
-{% extends "layouts/index.html" %} {% block pageTitle %} Terminal or critical illness –
-{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+{% extends "layouts/index.html" %} {% block pageTitle %} Terminal or critical
+illness – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block
+content %}
 
 <div class="govuk-width-container">
-  <a href="index" class="govuk-back-link">Back</a>
+  <a href="/notes/index" class="govuk-back-link">Back</a>
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">Terminal or critical illness</h1>
+        <span class="govuk-caption-l">Terminal or critical illness</span>
+        <h1 class="govuk-heading-l">Implemented design and flow changes</h1>
+
         <h2 class="govuk-heading-m">Design changes</h2>
         <p class="govuk-body">
           <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
           Removed 'Has John Smith been under investigation for a serious or life
           changing illness for 12 months or more?'
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold"
+            >Screenshot for reference:</span
+          >
+          <a
+            href="/public/images/Terminal or critical illness - Removed question.png"
+            target="_blank"
+          >
+            Open this image (opens in a new tab)
+          </a>
         </p>
 
         <p class="govuk-body">
@@ -61,7 +75,7 @@
           This change means we can ask the users only relevant questions and not
           increase their cognitive load unnecessarily.
         </p>
-        
+
         <p class="govuk-body">
           <span class="govuk-body govuk-!-font-weight-bold"
             >Implementation:</span
@@ -73,46 +87,6 @@
         <p class="govuk-body">
           <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
           <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
-        </p>
-        <hr
-          class="govuk-section-break govuk-section-break--m govuk-section-break--visible"
-        />
-        <h2 class="govuk-heading-m" id="recommendations">Recommendations</h2>
-        <p class="govuk-body">
-          <span class="govuk-body govuk-!-font-weight-bold">Applies to:</span>
-          Flow of the questions
-        </p>
-        <p class="govuk-body">
-          <span class="govuk-body govuk-!-font-weight-bold"
-            >Recommendation:</span
-          >
-          Change the flow so the user can answer the minimum amount of questions
-          to get to their summary and evidence page.
-        </p>
-        <p class="govuk-body">
-          This means that when the user answers Yes to questions that fulfil a
-          removal criteria they skip the remaining questions. For example,
-        </p>
-        <ul class="govuk-list govuk-list--number">
-          <li>'Have they been diagnosed with a terminal illness? Yes or No'</li>
-          <li>Yes - 'Have they sat any year 11 exams? Yes or No'</li>
-          <li>Journey goes to Summary, then Evidence.</li>
-        </ul>
-
-        <p class="govuk-body">
-          <span class="govuk-body govuk-!-font-weight-bold"
-            >Reason to change:</span
-          >
-          The user has to answer every question in the flow even if they fulfil
-          the first case of the pupil being diagnosed with a terminal illness.
-          This could cause stress and worry that the pupil does not fulfil the
-          right criteria.
-        </p>
-        <p class="govuk-body">
-          <span class="govuk-body govuk-!-font-weight-bold"
-            >Implementation:</span
-          >
-          <a href="terminal-critical-flow-ideal">Link to ideal flow</a>.
         </p>
       </div>
     </div>

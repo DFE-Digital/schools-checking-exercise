@@ -1,0 +1,29 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Deceased – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <a href="/notes/index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l"> Deceased</span>
+        <h1 class="govuk-heading-l">Implemented design changes</h1>
+        <h2 class="govuk-heading-m">Design changes</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span>
+          Evidence screen has been removed.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span>
+          The guidance says that evidence for this journey is optional.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

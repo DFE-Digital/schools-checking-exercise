@@ -1,0 +1,34 @@
+{% extends "layouts/index.html" %} {% block pageTitle %} Year group change – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <a href="/notes/index" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Year group change</span>
+        <h1 class="govuk-heading-l">Implemented design and flow changes</h1>
+        <h2 class="govuk-heading-m">Design changes</h2>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Change:</span> 'Is
+          John Smith's year group being changed to lower than 11 or higher than
+          11? and 'Please provide the year group John Smith should be moved to?'
+          have been combined into one question. We now ask 'Which year group
+          have they changed to?' and list the years.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Reason:</span> Both
+          questions aren't needed so this makes the journey more
+          straightforward. It lets us route the form sooner and gives clearer
+          answers.
+        </p>
+        <p class="govuk-body">
+          <span class="govuk-body govuk-!-font-weight-bold">Severity:</span>
+          <strong class="govuk-tag govuk-tag--orange"> Medium </strong>
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
